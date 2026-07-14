@@ -4,8 +4,8 @@ theme:
   name: material
 
 nav:
-  -Home: index.md
+  - Home: index.md
   
-  -Mathematics:
+  - Mathematics:
       - Logic: mathematics/logic.md
       - Boolean Algebra: mathematics/boolean_algebra.md
