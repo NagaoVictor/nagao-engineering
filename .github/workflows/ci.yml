@@ -5,7 +5,7 @@ on:
     branches:
       - main
 
-permissionis:
+permissions:
   contents: read
   pages: write
   id-token: write
