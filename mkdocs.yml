@@ -1,0 +1,11 @@
+site_name: Nagao Engineering Encyclopedia
+
+theme:
+  name: material
+
+nav:
+  -Home: index.md
+  
+  -Mathematics:
+      - Logic: mathematics/logic.md
+      - Boolean Algebra: mathematics/boolean_algebra.md
