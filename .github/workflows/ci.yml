@@ -5,28 +5,40 @@ on:
     branches:
       - main
 
-permission:
+permissions:
   contents: read
   pages: write
   id-token: write
 
-job:
+jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.x
-      
-      - run: pip install mkdocs-material
+          python-version: "3.x"
 
-      - run: mkdocs build
+      - name: Install dependencies
+        run: |
+          pip install mkdocs
+          pip install mkdocs-material
 
-      - uses: actions/upload-pages-artifact@v3
+      - name: Build site
+        run: mkdocs build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
           path: site
 
-      - uses: actions/deploy-pages@v4
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
