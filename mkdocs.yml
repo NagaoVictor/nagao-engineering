@@ -11,3 +11,7 @@ nav:
   - Mathematics:
       - Logic: mathematics/logic.md
       - Boolean Algebra: mathematics/boolean_algebra.md
+
+  - C language:
+    - C Language Medium Level: clang/medium.md
+    - C Language Advanced Level: clang/advanced
