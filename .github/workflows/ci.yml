@@ -27,7 +27,7 @@ jobs:
         run: |
           pip install mkdocs
           pip install mkdocs-material
-	      pymdown-extensions	
+	    pymdown-extensions	
 
 
       - name: Build site
