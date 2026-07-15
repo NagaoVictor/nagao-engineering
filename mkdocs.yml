@@ -3,6 +3,12 @@ site_name: Nagao Engineering Encyclopedia
 theme:
   name: material
 
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+
 nav:
   - Home: index.md
   - Guide: guide.md
