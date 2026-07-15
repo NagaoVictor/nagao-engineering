@@ -4,9 +4,8 @@ theme:
   name: material
 
 nav:
-  - Home: 
-       - index.md
-       - guide.md
+  - Home: index.md
+  - Guide: guide.md
   
   - Mathematics:
       - Logic: mathematics/logic.md
