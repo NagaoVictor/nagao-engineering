@@ -4,10 +4,13 @@ theme:
   name: material
 
 nav:
-  - Home: 
-       - index.md
-       - guide.md
+  - Home: index.md
+  - Guide: guide.md
   
   - Mathematics:
       - Logic: mathematics/logic.md
       - Boolean Algebra: mathematics/boolean_algebra.md
+
+  - C language:
+    - C Language Medium Level: clang/medium.md
+    - C Language Advanced Level: clang/advanced
