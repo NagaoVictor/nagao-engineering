@@ -6,8 +6,20 @@ theme:
 markdown_extensions:
   - tables
   - admonition
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
   - pymdownx.arithmatex:
       generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  math: true
 
 nav:
   - Home: index.md
@@ -19,5 +31,5 @@ nav:
       - Boolean Algebra: mathematics/boolean_algebra.md
 
   - C language:
-    - C Language Medium Level: clang/medium.md
-    - C Language Advanced Level: clang/advanced
+      - C Language Medium Level: clang/medium.md
+      - C Language Advanced Level: clang/advanced
