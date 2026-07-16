@@ -22,6 +22,10 @@ As comparações permitem estabelecer relações entre valores.
 
 | Maior ou igual | $\\geq$ | $a\\geq b$ | a é maior ou igual a b |
 
+
+
+
+
 \# Matemática
 
 
