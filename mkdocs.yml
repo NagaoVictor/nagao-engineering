@@ -32,10 +32,10 @@ nav:
       - Conjuntos: mathematics/conjuntos.md
       - Relações: mathematics/relacoes.md
       - Funções: mathematics/funcoes.md
-      - Relações: mathematics/relacoes.md
-      - Relações: mathematics/relacoes.md
-      - Relações: mathematics/relacoes.md
-      - Relações: mathematics/relacoes.md
+      - Indução: mathematics/inducao.md
+      - Boa Ordenação: mathematics/boaordenacao.md
+      - Contradição: mathematics/contradicao.md
+      - Construtivas: mathematics/construtivas.md
       - Relações: mathematics/relacoes.md
       - Relações: mathematics/relacoes.md
       - Relações: mathematics/relacoes.md
