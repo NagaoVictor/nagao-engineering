@@ -6,23 +6,19 @@ As comparações permitem estabelecer relações entre valores.
 
 
 
-| Operação | Símbolo | Exemplo | Leitura |
+| Operação | Símbolo |
 
-|----------|---------|----------|----------|
+|----------|---------|
 
-| Igual | = | a = b | a é igual a b |
+| Menor | \&lt; |
 
-| Diferente | ≠ | a ≠ b | a é diferente de b |
+| Maior | \&gt; |
 
-| Menor | < | a < b | a é menor que b |
+| Menor ou igual | \&le; |
 
-| Maior | > | a > b | a é maior que b |
+| Maior ou igual | \&ge; |
 
-| Menor ou igual | ≤ | a ≤ b | a é menor ou igual a b |
-
-| Maior ou igual | ≥ | a ≥ b | a é maior ou igual a b |
-
-
+| Diferente | \&ne; |
 
 \# Matemática
 
