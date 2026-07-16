@@ -35,14 +35,12 @@ nav:
       - Indução: mathematics/inducao.md
       - Boa Ordenação: mathematics/boaordenacao.md
       - Prova por Contradição: mathematics/contradicao.md
-      - Provas Construtivas: mathematics/construtivas.md
+      - Provas Construtivas: mathematics/construtiva.md
       - Prova de Existencia: mathematics/existencia.md
       - Relações: mathematics/relacoes.md
       - Relações: mathematics/relacoes.md
       - Relações: mathematics/relacoes.md
       - Relações: mathematics/relacoes.md
-
-      - Boolean Algebra: mathematics/boolean_algebra.md
 
   - C language:
       - C Language Medium Level: clang/medium.md
