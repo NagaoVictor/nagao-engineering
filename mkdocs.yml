@@ -36,7 +36,8 @@ nav:
       - Boa Ordenação: mathematics/boaordenacao.md
       - Prova por Contradição: mathematics/contradicao.md
       - Provas Construtivas: mathematics/construtiva.md
-      - Prova de Existencia: mathematics/existencia.md
+      - Prova de Existência: mathematics/existencia.md
+      - Teoria dos Números: mathematics/numeros.md
 
   - C language:
       - C Language Medium Level: clang/medium.md
