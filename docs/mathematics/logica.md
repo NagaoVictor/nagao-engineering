@@ -1,162 +1,122 @@
-# Lógica Matemática
+# Sintáxe
 
-## O que é?
+## Binários
 
-Lógica matemática é o estudo de como construir raciocínios válidos. Ela fornece regras para determinar quando uma conclusão realmente decorre das premissas.
+- Conjunção (∧)
+- Disjunção (∨)
+- Condicional (→)
+- Bicondicional (↔)
+- NAND (↑)
+- NOR (↓)
+- XOR (⊕)
 
-Na computação, praticamente todo algoritmo, condição (`if`), laço (`while`) e circuito digital utiliza lógica.
+| p | q | ¬p | ¬q | p ∧ q | p ∨ q | p → q | p ↔ q | p ⊕ q | p ↑ q | p ↓ q |  T  |  ⊥  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |  ---  |  ---  |
+|  V  |  V  |  F  |  F  |  V  |  V  |  V  |  V  |  F  |  F  |  F  |  V  |  F  |
+|  V  |  F  |  F  |  V  |  F  |  V  |  F  |  F  |  V  |  V  |  F  |  V  |  F  |
+|  F  |  V  |  V  |  F  |  F  |  V  |  V  |  F  |  V  |  V  |  F  |  V  |  F  |
+|  F  |  F  |  V  |  V  |  F  |  F  |  V  |  V  |  F  |  V  |  V  |  V  |  F  |
 
----
+| Grupo | Símbolos |
+|--------|----------|
+| Variáveis Proposicionais | `p`, `q`, `r`, `s`, `t`, ... |
+| Constantes Lógicas | `⊤`, `⊥` |
+| Conectivos Lógicos | `¬`, `∧`, `∨`, `→`, `↔`, `⊕`, `↑`, `↓` |
+| Delimitadores | `(`, `)` |
+| Metassímbolos* | `A`, `B`, `C`, `...` |
 
-## Exemplo
+## Regra de Formação
+As **regras de formação** especificam como os símbolos do alfabeto podem ser combinados para construir fórmulas da linguagem. Elas definem, de maneira recursiva, o conjunto de todas as expressões sintaticamente válidas da lógica proposicional.
 
-Considere a afirmação:
+Sem essas regras, o alfabeto seria apenas um conjunto de símbolos isolados. São elas que transformam símbolos em fórmulas.
 
-> Se um número é múltiplo de 4, então ele é par.
+- Definir quais expressões pertencem à linguagem.
+- Impedir construções sintaticamente inválidas.
+- Permitir a construção recursiva de fórmulas cada vez mais complexas.
 
-Agora analise os seguintes números:
+Ex: (A ∧ B), (A ∨ B), (A → B) ...
 
-- 8
-- 12
-- 10
 
-**Pergunta:** Qual deles contradiz a afirmação?
+## Fórmula Bem Formada (WFF)
+Uma **Fórmula Bem Formada** (*Well-Formed Formula* ou **WFF**) é toda expressão que obedece às regras sintáticas da linguagem lógica. Em outras palavras, uma WFF é uma expressão construída corretamente a partir do alfabeto formal e das regras de formação.
 
----
+A sintaxe não verifica se uma fórmula é verdadeira ou falsa; ela verifica apenas se a expressão possui uma estrutura válida.
 
-## Como resolver
+- utiliza apenas símbolos do alfabeto formal; <br>
+- respeita a aridade dos operadores; <br> 
+- segue as regras de formação; <br>
+- possui delimitadores corretamente balanceados; <br>
+- pode ser construída recursivamente a partir das fórmulas atômicas. <br>
 
-Primeiro identificamos duas proposições.
+Ex: ((p ∧ q) → r), ((¬p ∨ q) ↔ (r ∧ s)), ... <br>
+Exemplos do que não é: ∧ p q <br>
 
-**P:** O número é múltiplo de 4.
+## Árvore Sintática
+Uma **árvore sintática** (*Syntax Tree* ou *Parse Tree*) é uma representação hierárquica da estrutura de uma fórmula lógica. Ela mostra exatamente como a expressão foi construída a partir das regras de formação, evidenciando a relação entre operadores e operandos.
 
-**Q:** O número é par.
+A árvore representa a **estrutura sintática** da fórmula, independentemente de seu significado ou valor lógico.
 
-A afirmação possui a forma lógica:
-
-```text
-P → Q
-```
-
-Agora verificamos cada número.
-
-### Número 8
-
-```text
-P = Verdadeiro
-Q = Verdadeiro
-
-P → Q = Verdadeiro
-```
-
-O número satisfaz a afirmação.
-
----
-
-### Número 12
-
-```text
-P = Verdadeiro
-Q = Verdadeiro
-
-P → Q = Verdadeiro
-```
-
-Também satisfaz a afirmação.
-
----
-
-### Número 10
+- visualizar a estrutura da fórmula;
+- identificar o operador principal;
+- localizar subfórmulas;
+- determinar o escopo dos operadores;
+- facilitar provas por indução estrutural;
+- servir de base para algoritmos de análise sintática.
 
 ```text
-P = Falso
-Q = Verdadeiro
-
-P → Q = Verdadeiro
+((p ∧ q) → r)
 ```
-
-Mesmo não sendo múltiplo de 4, ele **não contradiz** a afirmação, pois ela só faz uma promessa sobre números que são múltiplos de 4.
-
----
-
-Agora imagine a afirmação:
-
-> Se um número é múltiplo de 4, então ele é ímpar.
-
-Considere o número 6.
 
 ```text
-P = Falso
-Q = Falso
-
-P → Q = Verdadeiro
+        →
+      /   \
+     ∧     r
+   /   \
+  p     q
 ```
 
-Novamente, não existe contradição.
+## Subfórmulas
 
-A única forma de tornar uma implicação falsa seria encontrar um número que fosse:
+Uma **subfórmula** é qualquer fórmula que aparece como parte da estrutura de outra fórmula. Em outras palavras, toda expressão lógica pode ser decomposta em fórmulas menores, e cada uma dessas partes é denominada subfórmula.
+
+As subfórmulas descrevem a estrutura interna de uma fórmula e constituem um dos conceitos fundamentais da sintaxe, pois permitem analisar, decompor e provar propriedades sobre expressões lógicas.
+
+- Toda fórmula atômica possui apenas ela mesma como subfórmula.
+- A negação possui como subfórmulas ela própria e a fórmula negada.
+- Uma fórmula binária possui como subfórmulas ela própria e todas as subfórmulas de seus operandos.
 
 ```text
-Múltiplo de 4
-       E
-Não fosse par
+((p ∧ q) → (¬r ∨ s))
 ```
+| p   | q   | r   | s   | p ∧ q | ¬r  | ¬r ∨ s | ( p ∧ q ) → (¬r ∨ s) |
+| --- | --- | --- | --- | --- | --- | ---- | ------------ |
+| ... | ... | ... | ... | ... | ... | ...  | ...          |
 
-Ou seja:
+## Profundidade e Comprimento
+
+A profundidade e o comprimento são medidas estruturais utilizadas para descrever a complexidade sintática de uma fórmula. Enquanto o comprimento mede seu tamanho, a profundidade mede o número de níveis de construção necessários para obtê-la.
+
+Essas medidas dependem apenas da estrutura da fórmula, não de seu significado ou valor lógico.
 
 ```text
-P = Verdadeiro
-Q = Falso
-
-P → Q = Falso
+((¬p ∨ q) ↔ (r ∧ s))
 ```
+```text
+              ↔
+           /      \
+         ∨          ∧
+       /   \      /   \
+      ¬     q    r     s
+      │
+      p
+```
+```text
+0 → ↔
 
-Como esse número não existe, a afirmação continua verdadeira.
+1 → ∨ , ∧
 
----
+2 → ¬ , q , r , s
 
-## O que aprender com isso
-
-Uma implicação (`P → Q`) **só é falsa** quando:
-
-- A hipótese é verdadeira.
-- A conclusão é falsa.
-
-Todos os demais casos são considerados verdadeiros.
-
-Essa é a base de praticamente todas as demonstrações matemáticas.
-
----
-
-## Onde aparece na computação?
-
-- Condições (`if`)
-- Laços (`while`)
-- Validação de dados
-- Circuitos digitais
-- Demonstrações de algoritmos
-- Verificação formal de software
-- Inteligência Artificial
-- Bancos de dados
-
----
-
-## Resumo
-
-| Conceito | Ideia |
-|----------|-------|
-| **Proposição** | Uma afirmação que pode ser verdadeira ou falsa. |
-| **Hipótese (P)** | A condição inicial da afirmação. |
-| **Conclusão (Q)** | O resultado esperado caso a hipótese seja verdadeira. |
-| **Implicação (P → Q)** | "Se P acontecer, então Q deve acontecer." |
-| **Contradição** | Encontrar um caso onde P é verdadeiro e Q é falso. |
-
----
-
-## Modelo mental
-
-Não tente provar que uma afirmação funciona para todos os casos.
-
-Procure um único caso onde a hipótese seja verdadeira e a conclusão seja falsa.
-
-Se esse caso não existir, a implicação permanece válida.
+3 → p
+```
+Profundidade = **3**
