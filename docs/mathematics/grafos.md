@@ -1,4 +1,4 @@
-\# Grafo
+# Grafo
 
 ```mermaid
 
@@ -28,7 +28,7 @@ C --- D
 
 
 
-\# Vértice
+# Vértice
 
 ```mermaid
 
@@ -42,7 +42,7 @@ A((A))
 
 
 
-\# Aresta
+# Aresta
 
 ```mermaid
 
@@ -62,7 +62,7 @@ A --- B
 
 
 
-\# Grafo Direcionado (Digrafo)
+# Grafo Direcionado (Digrafo)
 
 ```mermaid
 
@@ -92,7 +92,7 @@ C --> D
 
 
 
-\# Grafo Não Direcionado
+# Grafo Não Direcionado
 
 ```mermaid
 
@@ -122,7 +122,7 @@ C --- D
 
 
 
-\# Grafo Rotulado
+# Grafo Rotulado
 
 As arestas possuem rótulos.
 
@@ -172,7 +172,7 @@ A -->|amizade| B
 
 
 
-\# Grafo Ponderado
+# Grafo Ponderado
 
 Cada aresta possui um peso.
 
@@ -204,7 +204,7 @@ C ---|6| D
 
 
 
-\# Grafo Simples
+# Grafo Simples
 
 Sem laços e sem arestas paralelas.
 
@@ -232,7 +232,7 @@ B --- C
 
 
 
-\# Multigrafo
+# Multigrafo
 
 Um multigrafo permite arestas paralelas entre dois vértices.
 
@@ -260,7 +260,7 @@ X --- B
 
 
 
-\# Pseudografo
+# Pseudografo
 
 Um pseudografo permite laços (loops).
 
@@ -288,7 +288,7 @@ A --- B
 
 
 
-\# Incidência
+# Incidência
 
 Uma aresta é incidente aos vértices que ela conecta.
 
@@ -314,7 +314,7 @@ e --- B
 
 
 
-\# Adjacência
+# Adjacência
 
 Dois vértices são adjacentes quando existe uma aresta entre eles.
 
@@ -340,7 +340,7 @@ B --- C
 
 
 
-\# Grau
+# Grau
 
 O grau é o número de arestas incidentes em um vértice.
 
@@ -374,7 +374,7 @@ grau(A)=3, grau(B)=1, grau(C)=1, grau(D)=1
 
 
 
-\# Grau de Entrada (In-degree)
+# Grau de Entrada (In-degree)
 
 Conta quantas arestas chegam ao vértice.
 
@@ -402,7 +402,7 @@ entrada(C)=2
 
 
 
-\# Grau de Saída (Out-degree)
+# Grau de Saída (Out-degree)
 
 Conta quantas arestas saem do vértice.
 
@@ -430,7 +430,7 @@ saída(A)=2
 
 
 
-\# Laço (Loop)
+# Laço (Loop)
 
 Uma aresta liga um vértice a ele mesmo.
 
@@ -454,7 +454,7 @@ L --> A
 
 
 
-\# Arestas Paralelas
+# Arestas Paralelas
 
 Mais de uma aresta conecta o mesmo par de vértices.
 
@@ -482,7 +482,7 @@ X --- B
 
 
 
-\# Isomorfismo
+# Isomorfismo
 
 Dois grafos são isomorfos quando possuem a mesma estrutura, mesmo que os nomes dos vértices sejam diferentes.
 
@@ -532,11 +532,11 @@ A ↔ X, B ↔ Y, C ↔ Z
 
 
 
-\# Caminho
+# Caminho
 
 
 
-Um \*\*caminho\*\* é uma sequência de vértices conectados por arestas, onde cada vértice consecutivo possui uma aresta entre eles.
+Um **caminho** é uma sequência de vértices conectados por arestas, onde cada vértice consecutivo possui uma aresta entre eles.
 
 
 
@@ -582,15 +582,15 @@ A → B → C → D → E
 
 
 
-\---
+---
 
 
 
-\# Comprimento do Caminho
+# Comprimento do Caminho
 
 
 
-O \*\*comprimento\*\* de um caminho é a quantidade de arestas percorridas.
+O **comprimento** de um caminho é a quantidade de arestas percorridas.
 
 
 
@@ -640,15 +640,15 @@ Número de arestas:
 
 
 
-\---
+---
 
 
 
-\# Caminho Simples
+# Caminho Simples
 
 
 
-Um \*\*caminho simples\*\* não repete vértices.
+Um **caminho simples** não repete vértices.
 
 
 
@@ -690,15 +690,15 @@ Todos os vértices aparecem apenas uma vez.
 
 
 
-\---
+---
 
 
 
-\# Trilha (Trail)
+# Trilha (Trail)
 
 
 
-Uma \*\*trilha\*\* não repete arestas.
+Uma **trilha** não repete arestas.
 
 
 
@@ -746,15 +746,15 @@ Nenhuma aresta foi utilizada duas vezes.
 
 
 
-\---
+---
 
 
 
-\# Passeio (Walk)
+# Passeio (Walk)
 
 
 
-Um \*\*passeio\*\* é a forma mais geral.
+Um **passeio** é a forma mais geral.
 
 
 
@@ -800,11 +800,11 @@ Tudo pode ser repetido.
 
 
 
-\---
+---
 
 
 
-\# Caminho Dirigido
+# Caminho Dirigido
 
 
 
@@ -866,11 +866,11 @@ pois a direção da aresta é oposta.
 
 
 
-\---
+---
 
 
 
-\# Caminho Mínimo (Shortest Path)
+# Caminho Mínimo (Shortest Path)
 
 
 
@@ -950,11 +950,11 @@ A → B → D
 
 
 
-\---
+---
 
 
 
-\# Comparação
+# Comparação
 
 
 
@@ -976,11 +976,11 @@ A → B → D
 
 
 
-\---
+---
 
 
 
-\# Hierarquia
+# Hierarquia
 
 
 
