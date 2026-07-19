@@ -88,7 +88,7 @@ b<0 \implies ab>0
 \end{cases}
 $$
 
-(d) $a>b \implies a+c>b+c$
+(d) $a>b \implies a+c>b+c$ <br>
 Prova: <br>
 &emsp;&emsp;Novamente pelo axioma (6), temos que<br>
 &emsp;&emsp;Se: $a>b \implies a-b>0 \implies (a+c)-(b+c)>0 \implies a+b \implies b+c$. 
