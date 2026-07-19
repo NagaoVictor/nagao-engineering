@@ -38,6 +38,7 @@ nav:
       - Provas Construtivas: mathematics/construtiva.md
       - Prova de Existência: mathematics/existencia.md
       - Teoria dos Números: mathematics/numeros.md
+      - Teoria dos Gráfos: mathematics/grafos.md
 
   - C language:
       - C Language Medium Level: clang/medium.md
