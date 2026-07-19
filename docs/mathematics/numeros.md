@@ -50,21 +50,46 @@ $Erro = \frac{1}{12} - (\frac{8}{10^2} + \frac{3}{10^3} + \frac{3}{10^4} + ... +
 
 (a) Se $a>0$, então $-a<0$ e vice-versa.
 
-(b) Se $b>0$, então $\text{} \begin{cases} \text{$b>0 \implies ab>0$} \\ \text{$b<0 \implies ab<0$} \end{cases}$
+(b) Se $a>0$, então
 
-(c) Se $a<0$, então $\text{} \begin{cases} \text{$b>0 \implies ab>0$} \\ \text{$b<0 \implies ab<0$} \end{cases}$
+$$
+\begin{cases}
+b>0 \implies ab>0\\
+b<0 \implies ab<0
+\end{cases}
+$$
+
+(c) Se $a<0$, então
+
+$$
+\begin{cases}
+b>0 \implies ab<0\\
+b<0 \implies ab>0
+\end{cases}
+$$
 
 (d) $a>b \implies a+c>b+c$
 
-(e) $a>b,c \leq d \implies a + c > b + d$
+(e) $a>b,\ c>d \implies a+c>b+d$
 
-(f) $a>b$ então $\text{} \begin{cases} \text{$c>0 \implies ac>bc$} \\ \text{$c<0 \implies ac<bc$} \end{cases}$
+(f) Se $a>b$, então
 
-(g) $a \neq 0 \implies a^2 > 0$
+$$
+\begin{cases}
+c>0 \implies ac>bc\\
+c<0 \implies ac<bc
+\end{cases}
+$$
 
-(h) $a > 0 \iff \frac{1}{a} > 0$
+(g) $a\neq0 \implies a^2>0$
 
-(i) Se a e b têm um mesmo sinal e $a>b$, então $\frac{1}{a} < \frac{1}{b}$
+(h) $a>0 \iff \dfrac{1}{a}>0$
+
+(i) Se $a$ e $b$ têm o mesmo sinal e $a>b$, então
+
+$$
+\frac{1}{a}<\frac{1}{b}
+$$
 
 1 Prove os itens (b), (c) e (g) da proposição 1.2.
 
