@@ -46,3 +46,44 @@ $\frac{1}{12} = 0,08333... = \frac{8}{10^2} + \frac{3}{10^3} + \frac{3}{10^4} + 
 $0 < \frac{1}{12} - ( \frac{8}{10^2} + \frac{3}{10^3} + \frac{3}{10^4} + ... + \frac{3}{10^k}) \leq \frac{1}{10^n}$
 
 $Erro = \frac{1}{12} - (\frac{8}{10^2} + \frac{3}{10^3} + \frac{3}{10^4} + ... + \frac{3}{10^k}) = \frac{1}{3.10^k}$
+
+
+(a) Se $a>0$, então $-a<0$ e vice-versa.
+
+(b) Se $b>0$, então $\text{} \begin{cases} \text{$b>0 \implies ab>0$} \\ \text{$b<0 \implies ab<0$} \end{cases}$
+
+(c) Se $a<0$, então $\text{} \begin{cases} \text{$b>0 \implies ab>0$} \\ \text{$b<0 \implies ab<0$} \end{cases}$
+
+(d) $a>b \implies a+c>b+c$
+
+(e) $a>b,c \leq d \implies a + c > b + d$
+
+(f) $a>b$ então $\text{} \begin{cases} \text{$c>0 \implies ac>bc$} \\ \text{$c<0 \implies ac<bc$} \end{cases}$
+
+(g) $a \neq 0 \implies a^2 > 0$
+
+(h) $a > 0 \iff \frac{1}{a} > 0$
+
+(i) Se a e b têm um mesmo sinal e $a>b$, então $\frac{1}{a} < \frac{1}{b}$
+
+1 Prove os itens (b), (c) e (g) da proposição 1.2.
+
+Item (b): $ba>0$, para $a,b>0$, $ab>0$  <br><br>
+Para provar:<br>
+&emsp;&emsp;$ab<0, a>0$ e $b<0$ <br>
+Sabemos que: <br>
+&emsp;&emsp;$b<0$ <br>
+Pela proposição (a), <br>  
+&emsp;&emsp;$-b>0$ <br>
+Como: <br>
+&emsp;&emsp;$a>0$ <br>
+E: <br>
+&emsp;&emsp;$-b>0$ <br>
+O produto é positivo: <br>
+&emsp;&emsp;$a(-b)>0$ <br>
+Agora usamos apenas álgebra: <br>
+&emsp;&emsp;$a(-b) = -(ab)$ <br>
+Logo:<br>
+&emsp;&emsp;$-(ab)>0$ <br>
+Aplicando novamente a proposição (a): <br>
+&emsp;&emsp;$ab<0$
