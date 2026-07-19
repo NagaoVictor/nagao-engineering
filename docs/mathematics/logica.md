@@ -89,9 +89,9 @@ As subfórmulas descrevem a estrutura interna de uma fórmula e constituem um do
 ((p ∧ q) → (¬r ∨ s))
 ```
 
-| p   | q   | r   | s   | p ∧ q | ¬r  | ¬r ∨ s | ( p ∧ q ) → (¬r ∨ s) |
-| --- | --- | --- | --- | --- | --- | ---- | ------------ |
-| ... | ... | ... | ... | ... | ... | ...  | ...          |
+| p | q | r | s | p ∧ q | ¬r | ¬r ∨ s | (p ∧ q) → (¬r ∨ s) |
+|---|---|---|---|-------|----|--------|--------------------|
+| T | T | T | T | T | F | T | T |
 
 
 ## Profundidade e Comprimento
