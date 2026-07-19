@@ -47,8 +47,28 @@ $0 < \frac{1}{12} - ( \frac{8}{10^2} + \frac{3}{10^3} + \frac{3}{10^4} + ... + \
 
 $Erro = \frac{1}{12} - (\frac{8}{10^2} + \frac{3}{10^3} + \frac{3}{10^4} + ... + \frac{3}{10^k}) = \frac{1}{3.10^k}$
 
+1.2 Aritmética em $\mathbb{R}$ <br>
+---
+(1) Consistência: se $a,b \in \mathbb{Q}$ e $a \geq b$ em $\mathbb{Q}$, então $a \geq b$ em $\mathbb{R}$
 
-(a) Se $a>0$, então $-a<0$ e vice-versa.
+(2) Reflexividade: $a \geq a$, para todo $a \in \mathbb{R}$
+
+(3) Antissimetria: se $a,b \in \mathbb{R}$ são tais que $a \geq b$ e $b \geq a$, então $a = b$
+
+(4) Transitividade: se $a,b,c \in \mathbb{R}$ são tais que $a \geq b$ e $b \geq c$, então $a \geq c$
+
+(5) Dicotomia: para todos $a,b \in \mathbb{R}$, tem-se $a \geq b$ ou $b \geq a$
+
+(6) $a>b \iff a-b>0$
+
+(7) $a,b > 0 \implies a+b,ab>0$
+
+---
+(a) Se $a>0$, então $-a<0$ e vice-versa. <br>
+Prova: <br>
+&emsp;&emsp;segundo o axioma (6) ao usar a subtração do número negativo em questão.<br>
+&emsp;&emsp;Se: $0>-a \iff 0-(-a)>0 \iff a>0$. 
+
 
 (b) Se $a>0$, então
 
@@ -69,6 +89,9 @@ b<0 \implies ab>0
 $$
 
 (d) $a>b \implies a+c>b+c$
+Prova: <br>
+&emsp;&emsp;Novamente pelo axioma (6), temos que<br>
+&emsp;&emsp;Se: $a>b \implies a-b>0 \implies (a+c)-(b+c)>0 \implies a+b \implies b+c$. 
 
 (e) $a>b,\ c>d \implies a+c>b+d$
 
