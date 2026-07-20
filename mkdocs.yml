@@ -47,6 +47,8 @@ nav:
       - Prova de Existência: mathematics/existencia.md
       - Teoria dos Números: mathematics/numeros.md
       - Teoria dos Gráfos: mathematics/grafos.md
+      - Derivadas: mathematics/derivadas.md  
+      - Linux: dispositivos/linux.md
 
   - C language:
       - C Language Medium Level: clang/medium.md
