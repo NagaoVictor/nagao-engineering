@@ -1,250 +1,982 @@
-\# Derivada da constante é zero
+\# Derivadas
 
-$f(x) = 5, f'(x) = 0$
 
 
+\---
 
-\# Derivada do monômio
 
-$(ax^n)^1 = nax^{n-1}$
 
+\## Constante
 
 
-\# Derivada do Produto
 
-$(f.g)' = f'.g + f.g'$
+Se
 
 
 
-\# Derivada dp Quociente
+$$
 
-$(\\frac{f}{g})' = \\frac{f'.g - f.g'}{g^2}$
+f(x)=c,
 
+$$
 
 
-\# Regra de cadeia
 
-$y = f(u)$ e $u = g(x)$ <br>
+então
 
-$y' = f'(u).u'$
 
 
+$$
 
-\# Derivadas Exponenciais
+f'(x)=0.
 
-$y = a^x (a>0$ e $a \\neq 1)$ <br>
+$$
 
-$y' = a^x\\ln(a)$
 
 
+\---
 
-\# Derivadas logarítmicas
 
-$y = \\log\_a(x)　(a>0$ e $a \\neq 1)$ <br>
 
-$y' = \\frac{1}{x}\\log\_a(e)$ <br>
+\## Potência
 
-$y' = \\frac{1}{x\\ln(a)}$
 
 
+Se
 
-\# Derivada Trigonométrica
 
-$\\sin'(x) = \\cos(x)$ <br>
 
-$\\sin(x) = \\cos(x) \\, dx $ <br>
+$$
 
+f(x)=ax^n,
 
+$$
 
-$\\cos'(x) = -\\sin(x)$ <br>
 
-$\\cos(x) = -\\sin(x) \\, dx $ <br>
 
+então
 
 
-$\\tan'(x) = \\sec^2$(x) <br>
 
-$\\tan(x) = \\sec^2(x) \\, dx $
+$$
 
+f'(x)=anx^{\\,n-1}.
 
+$$
 
-$\\cot'(x) = -\\csc^2(x)$ <br>
 
-$\\cot(x) = -\\csc^2(x) \\, dx $
 
+\---
 
 
-$\\sec'(x) = \\sec(x)\\tan(x)$ <br>
 
-$\\sec(x) = \\sec(x)\\tan(x) \\, dx $
+\## Soma e Diferença
 
 
 
-$\\csc'(x) = -\\csc(x)\\cot(x)$ <br>
+$$
 
-$\\csc(x) = -\\csc(x)\\cot(x) \\, dx $
+(f\\pm g)'=f'\\pm g'
 
+$$
 
 
-\# Derivada Trigonométrica Compostas
 
-$\\sin'(u) = \\cos(u).u'$
+\---
 
 
 
-\# Derivada Trigonométrica Inversa
+\## Múltiplo Constante
 
-$y = \\arcsin(x)$ <br>
 
-$y' = \\frac{1}{\\sqrt{1-x^2}} = \\frac{u'}{\\sqrt{1-u^2}}$ <br>
 
-$f:\[-1,1] \\to \[\\frac{-\\pi}{2},\\frac{\\pi}{2}]$
+$$
 
+(cf)'=cf'
 
+$$
 
-$y = \\arccos(x)$ <br>
 
-$y' = \\frac{-1}{\\sqrt{1-x^2}} = \\frac{-u'}{\\sqrt{1-u^2}}$ <br>
 
-$f:\[-1,1] \\to \[0,\\pi]$
+\---
 
 
 
-$y = \\arctan(x)$ <br>
+\## Produto
 
-$y' = \\frac{1}{1+x^2} = \\frac{u'}{1+u^2}$ <br>
 
-$f:\\mathbb{R} \\to (\\frac{-\\pi}{2},\\frac{\\pi}{2})$
 
+$$
 
+(fg)'=f'g+fg'
 
-$y = \\operatorname{arccot}(x)$ <br>
+$$
 
-$y' = \\frac{-1}{1+x^2} = \\frac{-u'}{1+u^2}$ <br>
 
-$f: \\mathbb{R} \\to (0, \\pi)$
 
+\---
 
 
-$y = \\operatorname{arcsec}(x)$ <br>
 
-$y' = \\frac{1}{|x| \\sqrt{x^2-1}} = \\frac{u'}{|u| \\sqrt{u^2-1}}$ <br>
+\## Quociente
 
-$f: (-\\infty, -1] \\cup \[1, \\infty) \\to \[0, \\pi] \\setminus \\left\\{\\frac{\\pi}{2}\\right\\}$
 
 
+$$
 
-$y = \\operatorname{arccsc}(x)$ <br>
+\\left(\\frac{f}{g}\\right)'
 
-$y' = \\frac{-1}{|x| \\sqrt{x^2-1}} = \\frac{-u'}{|u| \\sqrt{u^2-1}}$ <br>
+=
 
-$f: (-\\infty, -1] \\cup \[1, \\infty) \\to \\left\[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right] \\setminus \\{0\\}$
+\\frac{f'g-fg'}{g^2},
+
+\\qquad g(x)\\neq0
+
+$$
+
+
+
+\---
+
+
+
+\## Regra da Cadeia
+
+
+
+Se
+
+
+
+$$
+
+y=f(u)
+
+\\quad\\text{e}\\quad
+
+u=g(x),
+
+$$
+
+
+
+então
+
+
+
+$$
+
+\\frac{dy}{dx}
+
+=
+
+f'(u)\\,u'.
+
+$$
+
+
+
+\---
+
+
+
+\# Funções Exponenciais
+
+
+
+\## Exponencial Natural
+
+
+
+$$
+
+\\frac{d}{dx}(e^x)=e^x
+
+$$
+
+
+
+\---
+
+
+
+\## Exponencial Geral
+
+
+
+Para
+
+
+
+$$
+
+a>0,\\qquad a\\neq1,
+
+$$
+
+
+
+temos
+
+
+
+$$
+
+\\frac{d}{dx}(a^x)
+
+=
+
+a^x\\ln(a).
+
+$$
+
+
+
+\---
+
+
+
+\# Funções Logarítmicas
+
+
+
+\## Logaritmo Natural
+
+
+
+$$
+
+\\frac{d}{dx}(\\ln x)
+
+=
+
+\\frac1x
+
+$$
+
+
+
+\---
+
+
+
+\## Logaritmo na Base \\(a\\)
+
+
+
+$$
+
+\\frac{d}{dx}(\\log\_a x)
+
+=
+
+\\frac1{x\\ln(a)}.
+
+$$
+
+
+
+\---
+
+
+
+\# Funções Trigonométricas
+
+
+
+\## Seno
+
+
+
+$$
+
+\\frac{d}{dx}(\\sin x)
+
+=
+
+\\cos x
+
+$$
+
+
+
+\---
+
+
+
+\## Cosseno
+
+
+
+$$
+
+\\frac{d}{dx}(\\cos x)
+
+=
+
+\-\\sin x
+
+$$
+
+
+
+\---
+
+
+
+\## Tangente
+
+
+
+$$
+
+\\frac{d}{dx}(\\tan x)
+
+=
+
+\\sec^2x
+
+$$
+
+
+
+\---
+
+
+
+\## Cotangente
+
+
+
+$$
+
+\\frac{d}{dx}(\\cot x)
+
+=
+
+\-\\csc^2x
+
+$$
+
+
+
+\---
+
+
+
+\## Secante
+
+
+
+$$
+
+\\frac{d}{dx}(\\sec x)
+
+=
+
+\\sec x\\,\\tan x
+
+$$
+
+
+
+\---
+
+
+
+\## Cossecante
+
+
+
+$$
+
+\\frac{d}{dx}(\\csc x)
+
+=
+
+\-\\csc x\\,\\cot x
+
+$$
+
+
+
+\---
+
+
+
+\# Funções Trigonométricas Compostas
+
+
+
+\## Seno
+
+
+
+$$
+
+\\frac{d}{dx}(\\sin u)
+
+=
+
+\\cos(u)\\,u'
+
+$$
+
+
+
+\---
+
+
+
+\## Cosseno
+
+
+
+$$
+
+\\frac{d}{dx}(\\cos u)
+
+=
+
+\-\\sin(u)\\,u'
+
+$$
+
+
+
+\---
+
+
+
+\## Tangente
+
+
+
+$$
+
+\\frac{d}{dx}(\\tan u)
+
+=
+
+\\sec^2(u)\\,u'
+
+$$
+
+
+
+\---
+
+
+
+\## Cotangente
+
+
+
+$$
+
+\\frac{d}{dx}(\\cot u)
+
+=
+
+\-\\csc^2(u)\\,u'
+
+$$
+
+
+
+\---
+
+
+
+\## Secante
+
+
+
+$$
+
+\\frac{d}{dx}(\\sec u)
+
+=
+
+\\sec(u)\\tan(u)\\,u'
+
+$$
+
+
+
+\---
+
+
+
+\## Cossecante
+
+
+
+$$
+
+\\frac{d}{dx}(\\csc u)
+
+=
+
+\-\\csc(u)\\cot(u)\\,u'
+
+$$
+
+
+
+\---
+
+
+
+\# Funções Trigonométricas Inversas
+
+
+
+\## Arco Seno
+
+
+
+$$
+
+\\frac{d}{dx}(\\arcsin x)
+
+=
+
+\\frac1{\\sqrt{1-x^2}}
+
+$$
+
+
+
+Domínio:
+
+
+
+$$
+
+x\\in\[-1,1]
+
+$$
+
+
+
+\---
+
+
+
+\## Arco Cosseno
+
+
+
+$$
+
+\\frac{d}{dx}(\\arccos x)
+
+=
+
+\-\\frac1{\\sqrt{1-x^2}}
+
+$$
+
+
+
+\---
+
+
+
+\## Arco Tangente
+
+
+
+$$
+
+\\frac{d}{dx}(\\arctan x)
+
+=
+
+\\frac1{1+x^2}
+
+$$
+
+
+
+\---
+
+
+
+\## Arco Cotangente
+
+
+
+$$
+
+\\frac{d}{dx}(\\operatorname{arccot}x)
+
+=
+
+\-\\frac1{1+x^2}
+
+$$
+
+
+
+\---
+
+
+
+\## Arco Secante
+
+
+
+$$
+
+\\frac{d}{dx}(\\operatorname{arcsec}x)
+
+=
+
+\\frac1{|x|\\sqrt{x^2-1}}
+
+$$
+
+
+
+\---
+
+
+
+\## Arco Cossecante
+
+
+
+$$
+
+\\frac{d}{dx}(\\operatorname{arccsc}x)
+
+=
+
+\-\\frac1{|x|\\sqrt{x^2-1}}
+
+$$
+
+
+
+\---
+
+
+
+\# Funções Hiperbólicas
+
+
+
+\## Definições
+
+
+
+$$
+
+\\sinh(x)=\\frac{e^x-e^{-x}}2
+
+$$
+
+
+
+$$
+
+\\cosh(x)=\\frac{e^x+e^{-x}}2
+
+$$
+
+
+
+$$
+
+\\tanh(x)=\\frac{\\sinh(x)}{\\cosh(x)}
+
+$$
+
+
+
+$$
+
+\\coth(x)=\\frac{\\cosh(x)}{\\sinh(x)}
+
+$$
+
+
+
+$$
+
+\\operatorname{sech}(x)=\\frac1{\\cosh(x)}
+
+$$
+
+
+
+$$
+
+\\operatorname{csch}(x)=\\frac1{\\sinh(x)}
+
+$$
+
+
+
+\---
 
 
 
 \# Derivadas Hiperbólicas
 
-\## Propriedades Especiais
 
-$\\sinh(x) = \\frac{e^x - e^{-x}}{2}$
 
-$\\cosh(x) = \\frac{e^x + e^{-x}}{2}$
+$$
 
-$\\tanh(x) = \\frac{e^x - e^{-x}}{e^x + e^{-x}}$
+(\\sinh x)'=\\cosh x
 
-$\\coth(x) = \\frac{e^x + e^{-x}}{e^x - e^{-x}}$
-
-$\\operatorname{sech}(x) = \\frac{2}{e^x + e^{-x}}$
-
-$\\operatorname{csch}(x) = \\frac{2}{e^x - e^{-x}}$
+$$
 
 
 
-$\\sinh'(x) = \\cosh(x)$ <br>
+$$
 
-$\\sinh(x) = \\cosh(x) \\, dx $ <br>
+(\\cosh x)'=\\sinh x
 
-
-
-$\\cosh'(x) = \\sinh(x)$ <br>
-
-$\\cosh(x) = \\sinh(x) \\, dx $ <br>
+$$
 
 
 
-$\\tanh'(x) = \\operatorname{sech^2}(x)$ <br>
+$$
 
-$\\tanh(x) = \\operatorname{sech^2}(x) \\, dx $ <br>
+(\\tanh x)'=\\operatorname{sech}^2x
 
-
-
-$\\coth'(x) = -\\operatorname{csch^2}(x)$ <br>
-
-$\\coth(x) = -\\operatorname{csch^2}(x) \\, dx $ <br>
+$$
 
 
 
-$\\operatorname{sech'}(x) = -\\operatorname{sech}(x)\\tanh(x)$<br>
+$$
 
-$\\operatorname{sech}(x) = -\\operatorname{sech}(x)\\tanh(x) \\, dx $
+(\\coth x)'=-\\operatorname{csch}^2x
 
-
-
-$\\operatorname{csch'}(x) = -\\operatorname{csch}(x)\\coth(x)$<br>
-
-$\\operatorname{csch}(x) = -\\operatorname{csch}(x)\\coth(x) \\, dx $
+$$
 
 
 
-\# Derivadas Hiperbólicas Inversas
+$$
 
-$\\sinh^{-1}(x) = \\frac{u'}{\\sqrt{u^2 + 1}}$ <br>
+(\\operatorname{sech}x)'
 
+=
 
+\-\\operatorname{sech}x\\,\\tanh x
 
-$\\cosh^{-1}(x) = \\frac{u'}{\\sqrt{u^2 - 1}}$ <br>
-
-
-
-$\\tanh^{-1}(x) = \\frac{u'}{1 - u^2}$ <br>
+$$
 
 
 
-$\\coth^{-1}(x) = \\frac{u'}{1 - u^2}$ <br>
+$$
+
+(\\operatorname{csch}x)'
+
+=
+
+\-\\operatorname{csch}x\\,\\coth x
+
+$$
 
 
 
-$\\operatorname{sech^{-1}}(x) = \\frac{-u'}{u\\sqrt{u^2 - 1}}$ <br>
+\---
 
 
 
-$\\operatorname{csch^{-1}}(x) = \\frac{-u'}{u\\sqrt{u^2 + 1}}$ <br>
+\# Funções Hiperbólicas Inversas
 
 
 
-\# Derivadas de Segunda e N Ordem
+$$
 
-$\\frac{d^2f}{dx^2} = (f')'$
+(\\operatorname{arsinh}x)'
+
+=
+
+\\frac1{\\sqrt{x^2+1}}
+
+$$
 
 
 
-$\\frac{d^nf}{dx^n} = ((((((f')')')')')')'$
+$$
+
+(\\operatorname{arcosh}x)'
+
+=
+
+\\frac1{\\sqrt{x^2-1}}
+
+$$
+
+
+
+$$
+
+(\\operatorname{artanh}x)'
+
+=
+
+\\frac1{1-x^2}
+
+$$
+
+
+
+$$
+
+(\\operatorname{arcoth}x)'
+
+=
+
+\\frac1{1-x^2}
+
+$$
+
+
+
+$$
+
+(\\operatorname{arsech}x)'
+
+=
+
+\-\\frac1{x\\sqrt{1-x^2}}
+
+$$
+
+
+
+$$
+
+(\\operatorname{arcsch}x)'
+
+=
+
+\-\\frac1{|x|\\sqrt{1+x^2}}
+
+$$
+
+
+
+\---
+
+
+
+\# Derivadas de Ordem Superior
+
+
+
+\## Segunda Derivada
+
+
+
+$$
+
+f''(x)
+
+=
+
+\\frac{d^2f}{dx^2}
+
+$$
+
+
+
+\---
+
+
+
+\## n-ésima Derivada
+
+
+
+$$
+
+f^{(n)}(x)
+
+=
+
+\\frac{d^nf}{dx^n}
+
+$$
+
+
+
+\---
 
 
 
 \# Polinômio de Taylor
 
-$f:I  \\to \\mathbb{R}$ <br>
+
+
+$$
+
+P\_n(x)
+
+=
+
+\\sum\_{k=0}^{n}
+
+\\frac{f^{(k)}(c)}{k!}(x-c)^k
+
+$$
 
 
 
-$\\sum{\\frac{f^{(n)}}{n!}(c)(x-c)^n}$ <br>
+ou
 
 
 
-$P\_{n}(c) = f(c) + f'(c)(x-c) + \\frac{f''}{2!}(c)(x-c)^2 + ... + \\frac{f^{(n)}}{n!}(c)(x-c)^n$
+$$
+
+P\_n(x)
+
+=
+
+f(c)
+
+\+
+
+f'(c)(x-c)
+
+\+
+
+\\frac{f''(c)}{2!}(x-c)^2
+
++\\cdots+
+
+\\frac{f^{(n)}(c)}{n!}(x-c)^n.
+
+$$
 
 
 
-$P\_{e}(0) = 1 + x + \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\frac{x^4}{4!} + \\frac{x^5}{5!} + \\frac{x^6}{6!} \\approx e^x$ 
+\## Série de Maclaurin de \\(e^x\\)
+
+
+
+$$
+
+e^x
+
+=
+
+1+x+\\frac{x^2}{2!}
+
++\\frac{x^3}{3!}
+
++\\frac{x^4}{4!}
+
++\\frac{x^5}{5!}
+
++\\cdots
+
+$$
 
