@@ -3,6 +3,8 @@ ruby {
 }
 
 rt {
-    font-size: 0.50em;
-    line-height: 0.8;
+    font-size: 0.52em;
+    line-height: 0.9;
+    color: #888;
+    transform: translateY(2px);
 }
