@@ -1,4 +1,4 @@
-\# Derivada da constante é zero
+# Derivada da constante é zero
 
 
 
@@ -6,7 +6,7 @@ $f(x)=5,\\qquad f'(x)=0$
 
 
 
-\# Derivada do monômio
+# Derivada do monômio
 
 
 
@@ -14,7 +14,7 @@ $(ax^n)'=nax^{n-1}$
 
 
 
-\# Derivada do Produto
+# Derivada do Produto
 
 
 
@@ -22,7 +22,7 @@ $(f\\cdot g)'=f'\\cdot g+f\\cdot g'$
 
 
 
-\# Derivada do Quociente
+# Derivada do Quociente
 
 
 
@@ -30,7 +30,7 @@ $\\left(\\frac{f}{g}\\right)'=\\frac{f'\\cdot g-f\\cdot g'}{g^2}$
 
 
 
-\# Regra da Cadeia
+# Regra da Cadeia
 
 
 
@@ -46,7 +46,7 @@ $y'=f'(u)\\cdot u'$
 
 
 
-\# Derivadas Exponenciais
+# Derivadas Exponenciais
 
 
 
@@ -62,7 +62,7 @@ $y'=a^x\\ln(a)$
 
 
 
-\# Derivadas Logarítmicas
+# Derivadas Logarítmicas
 
 
 
@@ -86,7 +86,7 @@ $y'=\\frac{1}{x\\ln(a)}$
 
 
 
-\# Derivadas Trigonométricas
+# Derivadas Trigonométricas
 
 
 
@@ -134,7 +134,7 @@ $\\csc'(x)=-\\csc(x)\\cot(x)$
 
 
 
-\# Derivadas Trigonométricas Compostas
+# Derivadas Trigonométricas Compostas
 
 
 
