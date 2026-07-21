@@ -8,6 +8,11 @@ rt {
     color: #888;
     transform: translateY(2px);
 }
+
 h1 {
     color: red;
+}
+
+body {
+    background: red !important;
 }
