@@ -1,18 +1,21 @@
-.furi{
-    display:inline-flex;
-    flex-direction:column;
-    align-items:center;
-    line-height:1;
-    vertical-align:middle;
+.furi {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+
+    line-height: 1;
+
+    gap: 2px;          /* ajuste aqui */
+    vertical-align: middle;
 }
 
-.furi .kana{
-    font-size:.52em;
-    margin-bottom:-2px;
-    font-weight:400;
-    white-space:nowrap;
+.furi .kana {
+    font-size: 0.52em;
+    margin: 0;         /* remova o margin-bottom */
+    line-height: 1;
 }
 
-.furi .kanji{
-    font-size:1em;
+.furi .kanji {
+    margin: 0;
+    line-height: 1;
 }
