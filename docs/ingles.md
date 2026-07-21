@@ -1,7 +1,3 @@
-\# English
-
-
-
 I recently joined a new company, and I still have a lot to learn. However, I'm getting more comfortable with the job every day.
 
 
