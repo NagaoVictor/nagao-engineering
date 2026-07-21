@@ -1,16 +1,18 @@
-ruby {
-    ruby-position: over;
+.furi{
+    display:inline-flex;
+    flex-direction:column;
+    align-items:center;
+    line-height:1;
+    vertical-align:middle;
 }
 
-rt {
-    font-size: 2em !important;
-    color: green !important;
+.furi .kana{
+    font-size:.52em;
+    margin-bottom:-4px;
+    font-weight:400;
+    white-space:nowrap;
 }
 
-h1 {
-    color: red;
-}
-
-body {
-    background: blue !important;
+.furi .kanji{
+    font-size:1em;
 }
