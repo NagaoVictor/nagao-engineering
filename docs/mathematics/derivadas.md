@@ -1,250 +1,182 @@
 \# Derivada da constante é zero
 
-$f(x) = 5, f'(x) = 0$
+
+
+$f(x)=5,\\qquad f'(x)=0$
 
 
 
 \# Derivada do monômio
 
-$(ax^n)^1 = nax^{n-1}$
+
+
+$(ax^n)'=nax^{n-1}$
 
 
 
 \# Derivada do Produto
 
-$(f.g)' = f'.g + f.g'$
+
+
+$(f\\cdot g)'=f'\\cdot g+f\\cdot g'$
 
 
 
-\# Derivada dp Quociente
-
-$(\\frac{f}{g})' = \\frac{f'.g - f.g'}{g^2}$
+\# Derivada do Quociente
 
 
 
-\# Regra de cadeia
+$\\left(\\frac{f}{g}\\right)'=\\frac{f'\\cdot g-f\\cdot g'}{g^2}$
 
-$y = f(u)$ e $u = g(x)$ <br>
 
-$y' = f'(u).u'$
+
+\# Regra da Cadeia
+
+
+
+$y=f(u)$ e $u=g(x)$
+
+
+
+<br>
+
+
+
+$y'=f'(u)\\cdot u'$
 
 
 
 \# Derivadas Exponenciais
 
-$y = a^x (a>0$ e $a \\neq 1)$ <br>
 
-$y' = a^x\\ln(a)$
 
+$y=a^x,\\qquad a>0,\\;a\\neq1$
 
 
-\# Derivadas logarítmicas
 
-$y = \\log\_a(x)　(a>0$ e $a \\neq 1)$ <br>
+<br>
 
-$y' = \\frac{1}{x}\\log\_a(e)$ <br>
 
-$y' = \\frac{1}{x\\ln(a)}$
 
+$y'=a^x\\ln(a)$
 
 
-\# Derivada Trigonométrica
 
-$\\sin'(x) = \\cos(x)$ <br>
+\# Derivadas Logarítmicas
 
-$\\sin(x) = \\cos(x) \\, dx $ <br>
 
 
+$y=\\log\_a(x),\\qquad a>0,\\;a\\neq1$
 
-$\\cos'(x) = -\\sin(x)$ <br>
 
-$\\cos(x) = -\\sin(x) \\, dx $ <br>
 
+<br>
 
 
-$\\tan'(x) = \\sec^2$(x) <br>
 
-$\\tan(x) = \\sec^2(x) \\, dx $
+$y'=\\frac{1}{x}\\log\_a(e)$
 
 
 
-$\\cot'(x) = -\\csc^2(x)$ <br>
+<br>
 
-$\\cot(x) = -\\csc^2(x) \\, dx $
 
 
+$y'=\\frac{1}{x\\ln(a)}$
 
-$\\sec'(x) = \\sec(x)\\tan(x)$ <br>
 
-$\\sec(x) = \\sec(x)\\tan(x) \\, dx $
 
+\# Derivadas Trigonométricas
 
 
-$\\csc'(x) = -\\csc(x)\\cot(x)$ <br>
 
-$\\csc(x) = -\\csc(x)\\cot(x) \\, dx $
+$\\sin'(x)=\\cos(x)$
 
 
 
-\# Derivada Trigonométrica Compostas
+<br>
 
-$\\sin'(u) = \\cos(u).u'$
 
 
+$\\cos'(x)=-\\sin(x)$
 
-\# Derivada Trigonométrica Inversa
 
-$y = \\arcsin(x)$ <br>
 
-$y' = \\frac{1}{\\sqrt{1-x^2}} = \\frac{u'}{\\sqrt{1-u^2}}$ <br>
+<br>
 
-$f:\[-1,1] \\to \[\\frac{-\\pi}{2},\\frac{\\pi}{2}]$
 
 
+$\\tan'(x)=\\sec^2(x)$
 
-$y = \\arccos(x)$ <br>
 
-$y' = \\frac{-1}{\\sqrt{1-x^2}} = \\frac{-u'}{\\sqrt{1-u^2}}$ <br>
 
-$f:\[-1,1] \\to \[0,\\pi]$
+<br>
 
 
 
-$y = \\arctan(x)$ <br>
+$\\cot'(x)=-\\csc^2(x)$
 
-$y' = \\frac{1}{1+x^2} = \\frac{u'}{1+u^2}$ <br>
 
-$f:\\mathbb{R} \\to (\\frac{-\\pi}{2},\\frac{\\pi}{2})$
 
+<br>
 
 
-$y = \\operatorname{arccot}(x)$ <br>
 
-$y' = \\frac{-1}{1+x^2} = \\frac{-u'}{1+u^2}$ <br>
+$\\sec'(x)=\\sec(x)\\tan(x)$
 
-$f: \\mathbb{R} \\to (0, \\pi)$
 
 
+<br>
 
-$y = \\operatorname{arcsec}(x)$ <br>
 
-$y' = \\frac{1}{|x| \\sqrt{x^2-1}} = \\frac{u'}{|u| \\sqrt{u^2-1}}$ <br>
 
-$f: (-\\infty, -1] \\cup \[1, \\infty) \\to \[0, \\pi] \\setminus \\left\\{\\frac{\\pi}{2}\\right\\}$
+$\\csc'(x)=-\\csc(x)\\cot(x)$
 
 
 
-$y = \\operatorname{arccsc}(x)$ <br>
+\# Derivadas Trigonométricas Compostas
 
-$y' = \\frac{-1}{|x| \\sqrt{x^2-1}} = \\frac{-u'}{|u| \\sqrt{u^2-1}}$ <br>
 
-$f: (-\\infty, -1] \\cup \[1, \\infty) \\to \\left\[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right] \\setminus \\{0\\}$
 
+$\\sin'(u)=\\cos(u)\\cdot u'$
 
 
-\# Derivadas Hiperbólicas
 
-\## Propriedades Especiais
+<br>
 
-$\\sinh(x) = \\frac{e^x - e^{-x}}{2}$
 
-$\\cosh(x) = \\frac{e^x + e^{-x}}{2}$
 
-$\\tanh(x) = \\frac{e^x - e^{-x}}{e^x + e^{-x}}$
+$\\cos'(u)=-\\sin(u)\\cdot u'$
 
-$\\coth(x) = \\frac{e^x + e^{-x}}{e^x - e^{-x}}$
 
-$\\operatorname{sech}(x) = \\frac{2}{e^x + e^{-x}}$
 
-$\\operatorname{csch}(x) = \\frac{2}{e^x - e^{-x}}$
+<br>
 
 
 
-$\\sinh'(x) = \\cosh(x)$ <br>
+$\\tan'(u)=\\sec^2(u)\\cdot u'$
 
-$\\sinh(x) = \\cosh(x) \\, dx $ <br>
 
 
+<br>
 
-$\\cosh'(x) = \\sinh(x)$ <br>
 
-$\\cosh(x) = \\sinh(x) \\, dx $ <br>
 
+$\\cot'(u)=-\\csc^2(u)\\cdot u'$
 
 
-$\\tanh'(x) = \\operatorname{sech^2}(x)$ <br>
 
-$\\tanh(x) = \\operatorname{sech^2}(x) \\, dx $ <br>
+<br>
 
 
 
-$\\coth'(x) = -\\operatorname{csch^2}(x)$ <br>
+$\\sec'(u)=\\sec(u)\\tan(u)\\cdot u'$
 
-$\\coth(x) = -\\operatorname{csch^2}(x) \\, dx $ <br>
 
 
+<br>
 
-$\\operatorname{sech'}(x) = -\\operatorname{sech}(x)\\tanh(x)$<br>
 
-$\\operatorname{sech}(x) = -\\operatorname{sech}(x)\\tanh(x) \\, dx $
 
-
-
-$\\operatorname{csch'}(x) = -\\operatorname{csch}(x)\\coth(x)$<br>
-
-$\\operatorname{csch}(x) = -\\operatorname{csch}(x)\\coth(x) \\, dx $
-
-
-
-\# Derivadas Hiperbólicas Inversas
-
-$\\sinh^{-1}(x) = \\frac{u'}{\\sqrt{u^2 + 1}}$ <br>
-
-
-
-$\\cosh^{-1}(x) = \\frac{u'}{\\sqrt{u^2 - 1}}$ <br>
-
-
-
-$\\tanh^{-1}(x) = \\frac{u'}{1 - u^2}$ <br>
-
-
-
-$\\coth^{-1}(x) = \\frac{u'}{1 - u^2}$ <br>
-
-
-
-$\\operatorname{sech^{-1}}(x) = \\frac{-u'}{u\\sqrt{u^2 - 1}}$ <br>
-
-
-
-$\\operatorname{csch^{-1}}(x) = \\frac{-u'}{u\\sqrt{u^2 + 1}}$ <br>
-
-
-
-\# Derivadas de Segunda e N Ordem
-
-$\\frac{d^2f}{dx^2} = (f')'$
-
-
-
-$\\frac{d^nf}{dx^n} = ((((((f')')')')')')'$
-
-
-
-\# Polinômio de Taylor
-
-$f:I  \\to \\mathbb{R}$ <br>
-
-
-
-$\\sum{\\frac{f^{(n)}}{n!}(c)(x-c)^n}$ <br>
-
-
-
-$P\_{n}(c) = f(c) + f'(c)(x-c) + \\frac{f''}{2!}(c)(x-c)^2 + ... + \\frac{f^{(n)}}{n!}(c)(x-c)^n$
-
-
-
-$P\_{e}(0) = 1 + x + \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\frac{x^4}{4!} + \\frac{x^5}{5!} + \\frac{x^6}{6!} \\approx e^x$ 
+$\\csc'(u)=-\\csc(u)\\cot(u)\\cdot u'$
 
