@@ -1,0 +1,10 @@
+ruby {
+    ruby-position: over;
+}
+
+rt {
+    font-size: 0.52em;
+    line-height: 0.9;
+    color: #888;
+    transform: translateY(2px);
+}
