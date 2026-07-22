@@ -12,25 +12,25 @@ $\\cos^2(x) = \\frac{1 + \\cos(2x)}{2}$
 
 
 
-\## Integrais Trigonométricas Básicas
+\## Integrais Trigonométricas Básicas (Simples e Composto)
 
-$\\int \\sin(x) dx = -\\cos(x) + C$
-
-
-
-$\\int \\cos(x) dx = \\sin(x) + C$
+$\\int \\sin(x) dx = -\\cos(x) + C$ / $\\int \\sin(u) du = -\\cos(u) + C$
 
 
 
-$\\int \\sec^2(x) dx = \\tan(x) + C$
+$\\int \\cos(x) dx = \\sin(x) + C$ / $\\int \\cos(u) du = \\sin(u) + C$
 
 
 
-$\\int \\sec(x)\\tan(x) dx = \\sec(x) + C$
+$\\int \\sec^2(x) dx = \\tan(x) + C$ / $\\int \\sec^2(u) du = \\tan(u) + C$
 
 
 
-$\\int \\csc(x)\\cot(x) dx = -\\csc(x) + C$
+$\\int \\sec(x)\\tan(x) dx = \\sec(x) + C$ / $\\int \\sec(u)\\tan(u) du = \\sec(u) + C$
+
+
+
+$\\int \\csc(x)\\cot(x) dx = -\\csc(x) + C$ / $\\int \\csc(u)\\cot(u) du = -\\csc(u) + C$
 
 
 
