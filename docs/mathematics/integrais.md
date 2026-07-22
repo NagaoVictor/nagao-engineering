@@ -1,42 +1,52 @@
-\# Integrais
+\# Integrais Fundamentais
 
 
 
-\## Guia de Integrais para Resolução por Substituição
+\## Identidades Trigonométricas e Limites
+
+$\\sin^2(x) = \\frac{1 - \\cos(2x)}{2}$
 
 
 
-\### Fundamentos
-
-\*   \*\*Limites:\*\* $\\lim\_{x \\to 0} \\frac{\\sin(x)}{x} = 1$ e $\\lim\_{x \\to \\infty} \\left(1 + \\frac{1}{x}\\right)^x = e$
-
-\*   \*\*Trigonometria:\*\* $\\sin^2(x) = \\frac{1 - \\cos(2x)}{2}$, $\\cos^2(x) = \\frac{1 + \\cos(2x)}{2}$
-
-\*   \*\*Derivada:\*\* $\\frac{d}{dx}\[\\ln(x)] = \\frac{1}{x}$
+$\\cos^2(x) = \\frac{1 + \\cos(2x)}{2}$
 
 
 
-\## Integrais Trigonométricas (Formato Padrão e $u$-sub)
+\## Integrais Trigonométricas Básicas (Simples e Composto)
 
-\*   $\\int \\sin(u) \\, du = -\\cos(u) + C$
-
-\*   $\\int \\cos(u) \\, du = \\sin(u) + C$
-
-\*   $\\int \\sec^2(u) \\, du = \\tan(u) + C$
-
-\*   $\\int \\csc^2(u) \\, du = -\\cot(u) + C$
-
-\*   $\\int \\sec(u)\\tan(u) \\, du = \\sec(u) + C$
-
-\*   $\\int \\csc(u)\\cot(u) \\, du = -\\csc(u) + C$
-
-\*   $\\int \\sec(u) \\, du = \\ln|\\sec(u) + \\tan(u)| + C$
-
-\*   $\\int \\csc(u) \\, du = -\\ln|\\csc(u) + \\cot(u)| + C$
+$\\int \\sin(x) dx = -\\cos(x) + C$ / $\\int \\sin(u) du = -\\cos(u) + C$
 
 
 
-\## Regra Geral da Substituição
+$\\int \\cos(x) dx = \\sin(x) + C$ / $\\int \\cos(u) du = \\sin(u) + C$
+
+
+
+$\\int \\sec^2(x) dx = \\tan(x) + C$ / $\\int \\sec^2(u) du = \\tan(u) + C$
+
+
+
+$\\int \\sec(x)\\tan(x) dx = \\sec(x) + C$ / $\\int \\sec(u)\\tan(u) du = \\sec(u) + C$
+
+
+
+$\\int \\csc(x)\\cot(x) dx = -\\csc(x) + C$ / $\\int \\csc(u)\\cot(u) du = -\\csc(u) + C$
+
+
+
+$\\int \\sec(x) dx = \\ln|\\sec(x) + \\tan(x)| + C$
+
+
+
+$\\int \\csc(x) dx = -\\ln|\\csc(x) + \\cot(x)| + C$
+
+
+
+\---
+
+
+
+\# Regra Geral da Substituição ($u$-substitution)
 
 $\\int f(g(x)) \\cdot g'(x) \\, dx = \\int f(u) \\, du$
 
