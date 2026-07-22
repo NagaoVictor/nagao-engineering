@@ -12,7 +12,7 @@ $\\cos^2(x) = \\frac{1 + \\cos(2x)}{2}$
 
 
 
-\## Integrais Trigonométricas Bás
+\## Integrais Trigonométricas Básicas
 
 $\\int \\sin(x) dx = -\\cos(x) + C$
 
@@ -34,11 +34,11 @@ $\\int \\csc(x)\\cot(x) dx = -\\csc(x) + C$
 
 
 
-$\\int \\sec(x) dx = \\ln|\\sec(x) + \\tan(x)| + C$
+$\\int \\sec(x) dx = \\ln\\lvert\\sec(x) + \\tan(x)\\rvert + C$
 
 
 
-$\\int \\csc(x) dx = -\\ln|\\csc(x) + \\cot(x)| + C$
+$\\int \\csc(x) dx = -\\ln\\lvert\\csc(x) + \\cot(x)\\rvert + C$
 
 
 
@@ -46,7 +46,7 @@ $\\int \\csc(x) dx = -\\ln|\\csc(x) + \\cot(x)| + C$
 
 
 
-\# Regra Geral da Substituição ($u$-substitution)
+\# Regra Geral da Substituição (\\text{u-substitution})
 
 $\\int f(g(x)) \\cdot g'(x) dx = \\int f(u) du$
 
