@@ -1,5 +1,7 @@
 \# Integrais
 
+
+
 \## Me dedicarei à integrais com \*\*\*Math Sorcerer\*\*\* para a resolução de integrais por substituição
 
 
