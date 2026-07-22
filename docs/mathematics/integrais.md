@@ -1,36 +1,34 @@
-\# Integrais
+\# Estudo de Integrais e Limites
 
 
 
-\## Me dedicarei às integrais com \*\*\*Math Sorcerer\*\*\* para a resolução de integrais por substituição
+\## Preparação para Integração por Substituição (Math Sorcerer)
 
 
 
-\### Limites Notáveis e Identidades Trigonométricas
+\### Limites Notáveis
 
-$\\lim\_{x \\to 0} \\frac{\\sin(x)}{x} = 1$
-
-
-
-$\\lim\_{x \\to \\infty} \\left(1 + \\frac{1}{x}\\right)^x = e$
+$$\\lim\_{x \\to 0} \\frac{\\sin(x)}{x} = 1$$
 
 
 
-$\\sin^2(x) = \\frac{1 - \\cos(2x)}{2}$
+$$\\lim\_{x \\to \\infty} \\left(1 + \\frac{1}{x}\\right)^x = e$$
 
 
 
-$\\cos^2(x) = \\frac{1 + \\cos(2x)}{2}$
+\### Identidades Trigonométricas de Suporte
+
+$$\\sin^2(x) = \\frac{1 - \\cos(2x)}{2}$$
 
 
 
-\---
+$$\\cos^2(x) = \\frac{1 + \\cos(2x)}{2}$$
 
 
 
 \### Derivada Fundamental de Suporte
 
-$\\frac{d}{dx}\[\\ln(x)] = \\frac{1}{x}$
+$$\\frac{d}{dx}\[\\ln(x)] = \\frac{1}{x}$$
 
 
 
@@ -38,37 +36,49 @@ $\\frac{d}{dx}\[\\ln(x)] = \\frac{1}{x}$
 
 
 
-\### Integrais Imediatas e Trigonométricas
-
-$\\int \\sin(x) \\, dx = -\\cos(x) + C$
+\## Tabela de Integrais Imediatas e Trigonométricas
 
 
 
-$\\int \\cos(x) \\, dx = \\sin(x) + C$
+$$\\int \\sin(x) \\, dx = -\\cos(x) + C$$
 
 
 
-$\\int \\sec^2(x) \\, dx = \\tan(x) + C$
+$$\\int \\cos(x) \\, dx = \\sin(x) + C$$
 
 
 
-$\\int \\csc^2(x) \\, dx = -\\cot(x) + C$
+$$\\int \\sec^2(x) \\, dx = \\tan(x) + C$$
 
 
 
-$\\int \\sec(x)\\tan(x) \\, dx = \\sec(x) + C$
+$$\\int \\csc^2(x) \\, dx = -\\cot(x) + C$$
 
 
 
-$\\int \\csc(x)\\cot(x) \\, dx = -\\csc(x) + C$
+$$\\int \\sec(x)\\tan(x) \\, dx = \\sec(x) + C$$
 
 
 
-$\\int \\csc(x) \\, dx = -\\ln|\\csc(x) + \\cot(x)| + C$
+$$\\int \\csc(x)\\cot(x) \\, dx = -\\csc(x) + C$$
 
 
 
-$\\int \\sec(x) \\, dx = \\ln|\\sec(x) + \\tan(x)| + C$
+$$\\int \\csc(x) \\, dx = -\\ln|\\csc(x) + \\cot(x)| + C$$
+
+
+
+$$\\int \\sec(x) \\, dx = \\ln|\\sec(x) + \\tan(x)| + C$$
+
+
+
+\---
+
+
+
+\## Método da Substituição ($u$-substitution)
+
+$$\\int f(g(x)) \\cdot g'(x) \\, dx = \\int f(u) \\, du$$
 
 
 
