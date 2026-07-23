@@ -1,7 +1,7 @@
 window.MathJax = {
   tex: {
-    inlineMath: [["\\(", "\\)"], ["$", "$"]],
-    displayMath: [["\\[", "\\]"], ["$$", "$$"]],
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]],
     processEscapes: true,
     processEnvironments: true
   },
@@ -12,7 +12,10 @@ window.MathJax = {
 };
 
 document$.subscribe(() => { 
-  if (typeof MathJax !== "undefined" && MathJax.typesetPromise) {
+  if (typeof MathJax !== "undefined" && MathJax.startup) {
+    MathJax.startup.output.clearCache();
+    MathJax.typesetClear();
+    MathJax.texReset();
     MathJax.typesetPromise();
   }
 });
