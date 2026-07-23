@@ -1,0 +1,1295 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../grafos/">
+      
+      
+        <link rel="next" href="../integrais/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Derivadas - Nagao Engineering Encyclopedia</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#derivadas-fundamentais" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Nagao Engineering Encyclopedia" class="md-header__button md-logo" aria-label="Nagao Engineering Encyclopedia" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Nagao Engineering Encyclopedia
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Derivadas
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Nagao Engineering Encyclopedia" class="md-nav__button md-logo" aria-label="Nagao Engineering Encyclopedia" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Nagao Engineering Encyclopedia
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teste/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teste
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../japones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Japones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ingles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ingles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mathematics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Mathematics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../logica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conjuntos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conjuntos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../relacoes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Relações
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../funcoes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Funções
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inducao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Indução
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../boaordenacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Boa Ordenação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contradicao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prova por Contradição
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../construtiva/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Provas Construtivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../existencia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prova de Existência
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../numeros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teoria dos Números
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../grafos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teoria dos Gráfos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Derivadas
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Derivadas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#derivada-da-constante-e-zero" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Derivada da constante é zero
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#derivada-do-monomio-regra-do-tombo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Derivada do monômio (Regra do Tombo)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#derivada-do-produto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Derivada do Produto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#derivada-do-quociente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Derivada do Quociente
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regra-da-cadeia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regra da Cadeia
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../integrais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integrais
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Linux
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dispositivos/linux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C language
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C language
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../clang/medium/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C Language Medium Level
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../clang/advanced.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C Language Advanced Level
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#derivada-da-constante-e-zero" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Derivada da constante é zero
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#derivada-do-monomio-regra-do-tombo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Derivada do monômio (Regra do Tombo)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#derivada-do-produto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Derivada do Produto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#derivada-do-quociente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Derivada do Quociente
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regra-da-cadeia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regra da Cadeia
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="derivadas-fundamentais">Derivadas Fundamentais<a class="headerlink" href="#derivadas-fundamentais" title="Permanent link">&para;</a></h1>
+<h2 id="derivada-da-constante-e-zero">Derivada da constante é zero<a class="headerlink" href="#derivada-da-constante-e-zero" title="Permanent link">&para;</a></h2>
+<p><span class="arithmatex">\(f(x) = 5 \implies f'(x) = 0\)</span></p>
+<h2 id="derivada-do-monomio-regra-do-tombo">Derivada do monômio (Regra do Tombo)<a class="headerlink" href="#derivada-do-monomio-regra-do-tombo" title="Permanent link">&para;</a></h2>
+<p><span class="arithmatex">\((x^n)' = n \cdot x^{n-1}\)</span></p>
+<p><span class="arithmatex">\((a \cdot x^n)' = a \cdot n \cdot x^{n-1}\)</span></p>
+<h2 id="derivada-do-produto">Derivada do Produto<a class="headerlink" href="#derivada-do-produto" title="Permanent link">&para;</a></h2>
+<p><span class="arithmatex">\((f \cdot g)' = f' \cdot g + f \cdot g'\)</span></p>
+<h2 id="derivada-do-quociente">Derivada do Quociente<a class="headerlink" href="#derivada-do-quociente" title="Permanent link">&para;</a></h2>
+<p><span class="arithmatex">\(\left(\frac{f}{g}\right)' = \frac{f' \cdot g - f \cdot g'}{g^2}\)</span></p>
+<h2 id="regra-da-cadeia">Regra da Cadeia<a class="headerlink" href="#regra-da-cadeia" title="Permanent link">&para;</a></h2>
+<p><span class="arithmatex">\(y = f(u) \quad \text{e} \quad u = g(x)\)</span></p>
+<p><span class="arithmatex">\(y' = f'(u) \cdot u'\)</span></p>
+<hr />
+<h1 id="funcoes-exponenciais-e-logaritmicas">Funções Exponenciais e Logarítmicas<a class="headerlink" href="#funcoes-exponenciais-e-logaritmicas" title="Permanent link">&para;</a></h1>
+<h2 id="derivadas-exponenciais">Derivadas Exponenciais<a class="headerlink" href="#derivadas-exponenciais" title="Permanent link">&para;</a></h2>
+<p><span class="arithmatex">\(y = a^x \quad (a &gt; 0 \quad \text{e} \quad a \neq 1)\)</span></p>
+<p><span class="arithmatex">\(y' = a^x \cdot \ln(a)\)</span></p>
+<p><span class="arithmatex">\(y = e^x \implies y' = e^x\)</span></p>
+<h2 id="derivadas-logaritmicas">Derivadas Logarítmicas<a class="headerlink" href="#derivadas-logaritmicas" title="Permanent link">&para;</a></h2>
+<p><span class="arithmatex">\(y = \log_a(x) \quad (a &gt; 0 \quad \text{e} \quad a \neq 1)\)</span></p>
+<p><span class="arithmatex">\(y' = \frac{1}{x \cdot \ln(a)}\)</span></p>
+<p><span class="arithmatex">\(y = \ln(x) \implies y' = \frac{1}{x}\)</span></p>
+<hr />
+<h1 id="derivadas-trigonometricas">Derivadas Trigonométricas<a class="headerlink" href="#derivadas-trigonometricas" title="Permanent link">&para;</a></h1>
+<h2 id="formato-simples-em-relacao-a-x">Formato Simples (em relação a x)<a class="headerlink" href="#formato-simples-em-relacao-a-x" title="Permanent link">&para;</a></h2>
+<p><span class="arithmatex">\(\sin'(x) = \cos(x)\)</span></p>
+<p><span class="arithmatex">\(\cos'(x) = -\sin(x)\)</span></p>
+<p><span class="arithmatex">\(\tan'(x) = \sec^2(x)\)</span></p>
+<p><span class="arithmatex">\(\cot'(x) = -\csc^2(x)\)</span></p>
+<p><span class="arithmatex">\(\sec'(x) = \sec(x) \cdot \tan(x)\)</span></p>
+<p><span class="arithmatex">\(\csc'(x) = -\csc(x) \cdot \cot(x)\)</span></p>
+<h2 id="formato-composto-regra-da-cadeia-em-relacao-a-u">Formato Composto (Regra da Cadeia em relação a u)<a class="headerlink" href="#formato-composto-regra-da-cadeia-em-relacao-a-u" title="Permanent link">&para;</a></h2>
+<p><span class="arithmatex">\(\sin'(u) = \cos(u) \cdot u'\)</span></p>
+<p><span class="arithmatex">\(\cos'(u) = -\sin(u) \cdot u'\)</span></p>
+<p><span class="arithmatex">\(\tan'(u) = \sec^2(u) \cdot u'\)</span></p>
+<p><span class="arithmatex">\(\cot'(u) = -\csc^2(u) \cdot u'\)</span></p>
+<p><span class="arithmatex">\(\sec'(u) = \sec(u) \cdot \tan(u) \cdot u'\)</span></p>
+<p><span class="arithmatex">\(\csc'(u) = -\csc(u) \cdot \cot(u) \cdot u'\)</span></p>
+<hr />
+<h1 id="derivada-trigonometrica-inversa">Derivada Trigonométrica Inversa<a class="headerlink" href="#derivada-trigonometrica-inversa" title="Permanent link">&para;</a></h1>
+<p><span class="arithmatex">\(y = \arcsin(x) \implies y' = \frac{1}{\sqrt{1-x^2}} = \frac{u'}{\sqrt{1-u^2}}\)</span>
+<span class="arithmatex">\(f:[-1,1] \to \left[-\frac{\pi}{2},\frac{\pi}{2}\right]\)</span></p>
+<p><span class="arithmatex">\(y = \arccos(x) \implies y' = \frac{-1}{\sqrt{1-x^2}} = \frac{-u'}{\sqrt{1-u^2}}\)</span>
+<span class="arithmatex">\(f:[-1,1] \to [0,\pi]\)</span></p>
+<p><span class="arithmatex">\(y = \arctan(x) \implies y' = \frac{1}{1+x^2} = \frac{u'}{1+u^2}\)</span>
+<span class="arithmatex">\(f:\mathbb{R} \to \left(-\frac{\pi}{2},\frac{\pi}{2}\right)\)</span></p>
+<p><span class="arithmatex">\(y = \operatorname{arccot}(x) \implies y' = \frac{-1}{1+x^2} = \frac{-u'}{1+u^2}\)</span>
+<span class="arithmatex">\(f: \mathbb{R} \to (0, \pi)\)</span></p>
+<p><span class="arithmatex">\(y = \operatorname{arcsec}(x) \implies y' = \frac{1}{|x| \sqrt{x^2-1}} = \frac{u'}{|u| \sqrt{u^2-1}}\)</span>
+<span class="arithmatex">\(f: (-\infty, -1] \cup [1, \infty) \to [0, \pi] \setminus \left\{\frac{\pi}{2}\right\}\)</span></p>
+<p><span class="arithmatex">\(y = \operatorname{arccsc}(x) \implies y' = \frac{-1}{|x| \sqrt{x^2-1}} = \frac{-u'}{|u| \sqrt{u^2-1}}\)</span>
+<span class="arithmatex">\(f: (-\infty, -1] \cup [1, \infty) \to \left[-\frac{\pi}{2}, \frac{\pi}{2}\right] \setminus \{0\}\)</span></p>
+<hr />
+<h1 id="funcoes-hiperbolicas">Funções Hiperbólicas<a class="headerlink" href="#funcoes-hiperbolicas" title="Permanent link">&para;</a></h1>
+<h2 id="definicoes-algebricas">Definições Algébricas<a class="headerlink" href="#definicoes-algebricas" title="Permanent link">&para;</a></h2>
+<p><span class="arithmatex">\(\sinh(x) = \frac{e^x - e^{-x}}{2}\)</span></p>
+<p><span class="arithmatex">\(\cosh(x) = \frac{e^x + e^{-x}}{2}\)</span></p>
+<p><span class="arithmatex">\(\tanh(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}}\)</span></p>
+<p><span class="arithmatex">\(\coth(x) = \frac{e^x + e^{-x}}{e^x - e^{-x}}\)</span></p>
+<p><span class="arithmatex">\(\operatorname{sech}(x) = \frac{2}{e^x + e^{-x}}\)</span></p>
+<p><span class="arithmatex">\(\operatorname{csch}(x) = \frac{2}{e^x - e^{-x}}\)</span></p>
+<h2 id="derivadas-hiperbolicas-simples-e-compostas">Derivadas Hiperbólicas Simples e Compostas<a class="headerlink" href="#derivadas-hiperbolicas-simples-e-compostas" title="Permanent link">&para;</a></h2>
+<p><span class="arithmatex">\(\sinh'(x) = \cosh(x) \implies \sinh'(u) = \cosh(u) \cdot u'\)</span></p>
+<p><span class="arithmatex">\(\cosh'(x) = \sinh(x) \implies \cosh'(u) = \sinh(u) \cdot u'\)</span></p>
+<p><span class="arithmatex">\(\tanh'(x) = \operatorname{sech}^2(x) \implies \tanh'(u) = \operatorname{sech}^2(u) \cdot u'\)</span></p>
+<p><span class="arithmatex">\(\coth'(x) = -\operatorname{csch}^2(x) \implies \coth'(u) = -\operatorname{csch}^2(u) \cdot u'\)</span></p>
+<p><span class="arithmatex">\(\operatorname{sech}'(x) = -\operatorname{sech}(x)\tanh(x) \implies \operatorname{sech}'(u) = -\operatorname{sech}(u)\tanh(u) \cdot u'\)</span></p>
+<p><span class="arithmatex">\(\operatorname{csch}'(x) = -\operatorname{csch}(x)\coth(x) \implies \operatorname{csch}'(u) = -\operatorname{csch}(u)\coth(u) \cdot u'\)</span></p>
+<hr />
+<h1 id="derivadas-hiperbolicas-inversas">Derivadas Hiperbólicas Inversas<a class="headerlink" href="#derivadas-hiperbolicas-inversas" title="Permanent link">&para;</a></h1>
+<p><span class="arithmatex">\(y = \operatorname{arcsinh}(x) \implies y' = \frac{1}{\sqrt{x^2 + 1}} = \frac{u'}{\sqrt{u^2 + 1}}\)</span></p>
+<p><span class="arithmatex">\(y = \operatorname{arccosh}(x) \implies y' = \frac{1}{\sqrt{x^2 - 1}} = \frac{u'}{\sqrt{u^2 - 1}}\)</span></p>
+<p><span class="arithmatex">\(y = \operatorname{arctanh}(x) \implies y' = \frac{1}{1 - x^2} = \frac{u'}{1 - u^2}\)</span></p>
+<p><span class="arithmatex">\(y = \operatorname{arccoth}(x) \implies y' = \frac{1}{1 - x^2} = \frac{u'}{1 - u^2}\)</span></p>
+<p><span class="arithmatex">\(y = \operatorname{arcsech}(x) \implies y' = \frac{-1}{x\sqrt{1 - x^2}} = \frac{-u'}{u\sqrt{1 - u^2}}\)</span></p>
+<p><span class="arithmatex">\(y = \operatorname{arccsch}(x) \implies y' = \frac{-1}{|x|\sqrt{1 + x^2}} = \frac{-u'}{|u|\sqrt{1 + u^2}}\)</span></p>
+<hr />
+<h1 id="derivadas-de-ordem-superior">Derivadas de Ordem Superior<a class="headerlink" href="#derivadas-de-ordem-superior" title="Permanent link">&para;</a></h1>
+<p><span class="arithmatex">\(\frac{d^2f}{dx^2} = f''(x) = (f')'\)</span></p>
+<p><span class="arithmatex">\(\frac{d^nf}{dx^n} = f^{(n)}(x)\)</span></p>
+<hr />
+<h1 id="polinomio-de-taylor">Polinômio de Taylor<a class="headerlink" href="#polinomio-de-taylor" title="Permanent link">&para;</a></h1>
+<p><span class="arithmatex">\(f: I \to \mathbb{R}\)</span></p>
+<div class="arithmatex">\[\sum_{n=0}^{\infty} \frac{f^{(n)}(c)}{n!}(x-c)^n\]</div>
+<div class="arithmatex">\[P_{n}(x) = f(c) + f'(c)(x-c) + \frac{f''(c)}{2!}(x-c)^2 + \dots + \frac{f^{(n)}(c)}{n!}(x-c)^n\]</div>
+<h2 id="exemplo-serie-de-taylor-para-ex-maclaurin">Exemplo: Série de Taylor para <span class="arithmatex">\(e^x\)</span> (Maclaurin)<a class="headerlink" href="#exemplo-serie-de-taylor-para-ex-maclaurin" title="Permanent link">&para;</a></h2>
+<div class="arithmatex">\[P(x) = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \frac{x^5}{5!} + \frac{x^6}{6!} \approx e^x\]</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@11/dist/mermaid.min.js"></script>
+      
+        <script src="../../javascripts/mermaid.js"></script>
+      
+        <script src="../../javascripts/furigana.js"></script>
+      
+    
+  </body>
+</html>

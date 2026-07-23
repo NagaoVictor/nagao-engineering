@@ -1,0 +1,21 @@
+.furi {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+
+    line-height: 1;
+
+    gap: 2px;          /* ajuste aqui */
+    vertical-align: middle;
+}
+
+.furi .kana {
+    font-size: 0.52em;
+    margin: 0;         /* remova o margin-bottom */
+    line-height: 1;
+}
+
+.furi .kanji {
+    margin: 0;
+    line-height: 1;
+}

@@ -1,0 +1,1225 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../existencia/">
+      
+      
+        <link rel="next" href="../grafos/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Teoria dos Números - Nagao Engineering Encyclopedia</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#teoria-dos-numeros" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Nagao Engineering Encyclopedia" class="md-header__button md-logo" aria-label="Nagao Engineering Encyclopedia" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Nagao Engineering Encyclopedia
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Teoria dos Números
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Nagao Engineering Encyclopedia" class="md-nav__button md-logo" aria-label="Nagao Engineering Encyclopedia" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Nagao Engineering Encyclopedia
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teste/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teste
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../japones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Japones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ingles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ingles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mathematics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Mathematics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../logica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conjuntos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conjuntos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../relacoes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Relações
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../funcoes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Funções
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inducao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Indução
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../boaordenacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Boa Ordenação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contradicao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prova por Contradição
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../construtiva/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Provas Construtivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../existencia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prova de Existência
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teoria dos Números
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teoria dos Números
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#12-aritmetica-em-mathbbr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Aritmética em \(\mathbb{R}\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../grafos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teoria dos Gráfos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../derivadas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Derivadas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../integrais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integrais
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Linux
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dispositivos/linux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C language
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C language
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../clang/medium/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C Language Medium Level
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../clang/advanced.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C Language Advanced Level
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#12-aritmetica-em-mathbbr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Aritmética em \(\mathbb{R}\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="teoria-dos-numeros">Teoria dos Numeros<a class="headerlink" href="#teoria-dos-numeros" title="Permanent link">&para;</a></h1>
+<p>1 Conjuntos dos Números Reais<br>
+&emsp;1.1 Aritmética em <span class="arithmatex">\(\mathbb{R}\)</span> <br>
+&emsp;1.2 A relação de ordem em <span class="arithmatex">\(\mathbb{R}\)</span> <br> 
+&emsp;1.3 A completude do conjunto dos reais <br> 
+&emsp;1.4 A representação geométrica <br>
+&emsp;1.5 Supremo e ínfimo <br>
+2 Produtos Notáveis e Equações<br>
+&emsp;2.1 Identidades algébricas <br>
+&emsp;2.2 Módulo e equações modulares <br>
+&emsp;2.3 Equações de segundo grau <br>
+&emsp;2.4 Equações polinomiais <br>
+3 Sistemas de Equações <br>
+&emsp;3.1 Sistemas lineares eliminação <br>
+&emsp;3.2 Miscelânea <br>
+4 Sequências Elementares <br>
+&emsp;4.1 Fórmulas posicionais e recorrências <br>
+&emsp;4.2 Progressões <br>
+&emsp;4.3 Recorrência lineares de ordens 2 e 3 <br>
+&emsp;4.4 Somatórios e produtórios <br>
+5 Indução Finita <br>
+6 Binômio de Newton <br>
+&emsp;6.1 Números binomiais <br>
+&emsp;6.2 A fórmula do binômio <br>
+7 Desigualdades Elementares
+&emsp;7.1 A desigualdade triangular <br>
+&emsp;7.2 A desigualdade entre as médias <br>
+&emsp;7.3 A desigualdade de Cauchy <br>
+&emsp;7.4 Mais desigualdades <br></p>
+<p><strong>Referência:</strong> <br> 
+<em>Tópicos de Matemática Elementar. Volume 1, Números Reais.</em> <br>
+<em>Antonio Caminha Muniz Neto</em> <br></p>
+<p>Capa Design: <br>
+<span class="arithmatex">\(\sqrt{a \pm \sqrt{b}} = \sqrt{\frac{a + \sqrt{a^2 - b^2}}{2}} \pm \sqrt{\frac{a - \sqrt{a^2 - b^2}}{2}}\)</span> <br>
+<span class="arithmatex">\(\frac{a_{1}+a_{2}+...+a_{n}}{n} \geq \sqrt[n]{a_{1}a_{2}...a_{n}}\)</span> <br></p>
+<p>1.1 Aritmética em <span class="arithmatex">\(\mathbb{R}\)</span> <br><br>
+<span class="arithmatex">\(b = aq + r\)</span> e <span class="arithmatex">\(0 \leq r &lt; a\)</span> <br><br></p>
+<p><span class="arithmatex">\(\frac{1}{8} = 0,125 = \frac{1}{10}+\frac{1}{10^2}+\frac{5}{10^3}\)</span></p>
+<p><span class="arithmatex">\(\frac{1}{12} = 0,08333... = \frac{8}{10^2} + \frac{3}{10^3} + \frac{3}{10^4} + \frac{3}{10^5} + ...\)</span></p>
+<p><span class="arithmatex">\(0 &lt; \frac{1}{12} - ( \frac{8}{10^2} + \frac{3}{10^3} + \frac{3}{10^4} + ... + \frac{3}{10^k}) \leq \frac{1}{10^n}\)</span></p>
+<p><span class="arithmatex">\(Erro = \frac{1}{12} - (\frac{8}{10^2} + \frac{3}{10^3} + \frac{3}{10^4} + ... + \frac{3}{10^k}) = \frac{1}{3.10^k}\)</span></p>
+<h2 id="12-aritmetica-em-mathbbr">1.2 Aritmética em <span class="arithmatex">\(\mathbb{R}\)</span> <br><a class="headerlink" href="#12-aritmetica-em-mathbbr" title="Permanent link">&para;</a></h2>
+<p>(1) Consistência: se <span class="arithmatex">\(a,b \in \mathbb{Q}\)</span> e <span class="arithmatex">\(a \geq b\)</span> em <span class="arithmatex">\(\mathbb{Q}\)</span>, então <span class="arithmatex">\(a \geq b\)</span> em <span class="arithmatex">\(\mathbb{R}\)</span></p>
+<p>(2) Reflexividade: <span class="arithmatex">\(a \geq a\)</span>, para todo <span class="arithmatex">\(a \in \mathbb{R}\)</span></p>
+<p>(3) Antissimetria: se <span class="arithmatex">\(a,b \in \mathbb{R}\)</span> são tais que <span class="arithmatex">\(a \geq b\)</span> e <span class="arithmatex">\(b \geq a\)</span>, então <span class="arithmatex">\(a = b\)</span></p>
+<p>(4) Transitividade: se <span class="arithmatex">\(a,b,c \in \mathbb{R}\)</span> são tais que <span class="arithmatex">\(a \geq b\)</span> e <span class="arithmatex">\(b \geq c\)</span>, então <span class="arithmatex">\(a \geq c\)</span></p>
+<p>(5) Dicotomia: para todos <span class="arithmatex">\(a,b \in \mathbb{R}\)</span>, tem-se <span class="arithmatex">\(a \geq b\)</span> ou <span class="arithmatex">\(b \geq a\)</span></p>
+<p>(6) <span class="arithmatex">\(a&gt;b \iff a-b&gt;0\)</span></p>
+<p>(7) <span class="arithmatex">\(a,b &gt; 0 \implies a+b,ab&gt;0\)</span></p>
+<hr />
+<p>(a) Se <span class="arithmatex">\(a&gt;0\)</span>, então <span class="arithmatex">\(-a&lt;0\)</span> e vice-versa. <br>
+Prova: <br>
+&emsp;&emsp;segundo o axioma (6) ao usar a subtração do número negativo em questão.<br>
+&emsp;&emsp;Se: <span class="arithmatex">\(0&gt;-a \iff 0-(-a)&gt;0 \iff a&gt;0\)</span>. </p>
+<p>(b) Se <span class="arithmatex">\(a&gt;0\)</span>, então</p>
+<div class="arithmatex">\[
+\begin{cases}
+b&gt;0 \implies ab&gt;0\\
+b&lt;0 \implies ab&lt;0
+\end{cases}
+\]</div>
+<p>(c) Se <span class="arithmatex">\(a&lt;0\)</span>, então</p>
+<div class="arithmatex">\[
+\begin{cases}
+b&gt;0 \implies ab&lt;0\\
+b&lt;0 \implies ab&gt;0
+\end{cases}
+\]</div>
+<p>(d) <span class="arithmatex">\(a&gt;b \implies a+c&gt;b+c\)</span> <br>
+Prova: <br>
+&emsp;&emsp;Novamente pelo axioma (6), temos que<br>
+&emsp;&emsp;Se: <span class="arithmatex">\(a&gt;b \implies a-b&gt;0 \implies (a+c)-(b+c)&gt;0 \implies a+b \implies b+c\)</span>. </p>
+<p>(e) <span class="arithmatex">\(a&gt;b,\ c&gt;d \implies a+c&gt;b+d\)</span></p>
+<p>(f) Se <span class="arithmatex">\(a&gt;b\)</span>, então</p>
+<div class="arithmatex">\[
+\begin{cases}
+c&gt;0 \implies ac&gt;bc\\
+c&lt;0 \implies ac&lt;bc
+\end{cases}
+\]</div>
+<p>(g) <span class="arithmatex">\(a\neq0 \implies a^2&gt;0\)</span></p>
+<p>(h) <span class="arithmatex">\(a&gt;0 \iff \dfrac{1}{a}&gt;0\)</span></p>
+<p>(i) Se <span class="arithmatex">\(a\)</span> e <span class="arithmatex">\(b\)</span> têm o mesmo sinal e <span class="arithmatex">\(a&gt;b\)</span>, então</p>
+<div class="arithmatex">\[
+\frac{1}{a}&lt;\frac{1}{b}
+\]</div>
+<p>1 Prove os itens (b), (c) e (g) da proposição 1.2.</p>
+<p>Item (b): <span class="arithmatex">\(ba&gt;0\)</span>, para <span class="arithmatex">\(a,b&gt;0\)</span>, <span class="arithmatex">\(ab&gt;0\)</span>  <br><br>
+Para provar:<br>
+&emsp;&emsp;<span class="arithmatex">\(ab&lt;0, a&gt;0\)</span> e <span class="arithmatex">\(b&lt;0\)</span> <br>
+Sabemos que: <br>
+&emsp;&emsp;<span class="arithmatex">\(b&lt;0\)</span> <br>
+Pela proposição (a), <br><br />
+&emsp;&emsp;<span class="arithmatex">\(-b&gt;0\)</span> <br>
+Como: <br>
+&emsp;&emsp;<span class="arithmatex">\(a&gt;0\)</span> <br>
+E: <br>
+&emsp;&emsp;<span class="arithmatex">\(-b&gt;0\)</span> <br>
+O produto é positivo: <br>
+&emsp;&emsp;<span class="arithmatex">\(a(-b)&gt;0\)</span> <br>
+Agora usamos apenas álgebra: <br>
+&emsp;&emsp;<span class="arithmatex">\(a(-b) = -(ab)\)</span> <br>
+Logo:<br>
+&emsp;&emsp;<span class="arithmatex">\(-(ab)&gt;0\)</span> <br>
+Aplicando novamente a proposição (a): <br>
+&emsp;&emsp;<span class="arithmatex">\(ab&lt;0\)</span></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@11/dist/mermaid.min.js"></script>
+      
+        <script src="../../javascripts/mermaid.js"></script>
+      
+        <script src="../../javascripts/furigana.js"></script>
+      
+    
+  </body>
+</html>
