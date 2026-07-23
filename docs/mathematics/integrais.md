@@ -2,113 +2,11 @@
 
 
 
-\## O que é uma Integral?
+\## Integral da constante
 
 
 
-A integração é a operação inversa da diferenciação.
-
-
-
-Se
-
-
-
-$$
-
-F'(x)=f(x)
-
-$$
-
-
-
-então
-
-
-
-$$
-
-\\int f(x)\\,dx = F(x)+C
-
-$$
-
-
-
-onde:
-
-
-
-\- $F(x)$ é uma primitiva (ou antiderivada);
-
-\- $C$ é a constante de integração.
-
-
-
-\---
-
-
-
-\# Identidades Trigonométricas
-
-
-
-$$
-
-\\sin^2(x)=\\frac{1-\\cos(2x)}{2}
-
-$$
-
-
-
-$$
-
-\\cos^2(x)=\\frac{1+\\cos(2x)}{2}
-
-$$
-
-
-
-$$
-
-1+\\tan^2(x)=\\sec^2(x)
-
-$$
-
-
-
-$$
-
-1+\\cot^2(x)=\\csc^2(x)
-
-$$
-
-
-
-$$
-
-\\sin^2(x)+\\cos^2(x)=1
-
-$$
-
-
-
-\---
-
-
-
-\# Integrais Fundamentais
-
-
-
-\## Polinomiais
-
-
-
-$$
-
-\\int x^n\\,dx=\\frac{x^{n+1}}{n+1}+C,\\qquad n\\neq -1
-
-$$
+$f(x)=k$
 
 
 
@@ -124,7 +22,29 @@ $$
 
 
 
-\## Exponenciais
+\## Integral do monômio
+
+
+
+$f(x)=x^n$
+
+
+
+$$
+
+\\int x^n\\,dx=\\frac{x^{n+1}}{n+1}+C
+
+\\qquad(n\\neq-1)
+
+$$
+
+
+
+\---
+
+
+
+\## Integral Exponencial
 
 
 
@@ -140,10 +60,6 @@ $$
 
 \\int a^x\\,dx=\\frac{a^x}{\\ln(a)}+C
 
-\\qquad
-
-(a>0,\\;a\\neq1)
-
 $$
 
 
@@ -152,7 +68,7 @@ $$
 
 
 
-\## Logarítmicas
+\## Integral Logarítmica
 
 
 
@@ -172,21 +88,11 @@ $$
 
 
 
-$$
-
-\\int\\log\_a(x)\\,dx=
-
-\\frac{x\\ln(x)-x}{\\ln(a)}+C
-
-$$
-
-
-
 \---
 
 
 
-\# Integrais Trigonométricas
+\## Integrais Trigonométricas
 
 
 
@@ -258,11 +164,7 @@ $$
 
 \\int\\sec(x)\\,dx=
 
-\\ln\\left|
-
-\\sec(x)+\\tan(x)
-
-\\right|+C
+\\ln\\left|\\sec(x)+\\tan(x)\\right|+C
 
 $$
 
@@ -272,11 +174,169 @@ $$
 
 \\int\\csc(x)\\,dx=
 
-\-\\ln\\left|
+\-\\ln\\left|\\csc(x)+\\cot(x)\\right|+C
 
-\\csc(x)+\\cot(x)
+$$
 
-\\right|+C
+
+
+\---
+
+
+
+\# Integrais Hiperbólicas
+
+
+
+$$
+
+\\int\\sinh(x)\\,dx=\\cosh(x)+C
+
+$$
+
+
+
+$$
+
+\\int\\cosh(x)\\,dx=\\sinh(x)+C
+
+$$
+
+
+
+$$
+
+\\int\\tanh(x)\\,dx=\\ln(\\cosh(x))+C
+
+$$
+
+
+
+$$
+
+\\int\\operatorname{sech}^2(x)\\,dx=\\tanh(x)+C
+
+$$
+
+
+
+$$
+
+\\int\\operatorname{csch}^2(x)\\,dx=-\\coth(x)+C
+
+$$
+
+
+
+\---
+
+
+
+\# Integração por Substituição
+
+
+
+Se
+
+
+
+$$
+
+u=g(x)
+
+$$
+
+
+
+então
+
+
+
+$$
+
+du=g'(x)\\,dx
+
+$$
+
+
+
+logo
+
+
+
+$$
+
+\\int f(g(x))g'(x)\\,dx
+
+=
+
+\\int f(u)\\,du
+
+$$
+
+
+
+\---
+
+
+
+\# Integração por Partes
+
+
+
+$$
+
+\\int u\\,dv
+
+=
+
+uv-\\int v\\,du
+
+$$
+
+
+
+\---
+
+
+
+\# Integrais Definidas
+
+
+
+$$
+
+\\int\_a^bf(x)\\,dx
+
+=
+
+F(b)-F(a)
+
+$$
+
+
+
+\---
+
+
+
+\# Teorema Fundamental do Cálculo
+
+
+
+$$
+
+\\frac{d}{dx}
+
+\\left(
+
+\\int\_a^xf(t)\\,dt
+
+\\right)
+
+=
+
+f(x)
 
 $$
 
