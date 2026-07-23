@@ -9,12 +9,11 @@ markdown_extensions:
   - toc:
       permalink: true
 
-  - pymdownx.arithmatex:
-      generic: true
-
-
   - pymdownx.details
   - pymdownx.highlight
+
+  - pymdownx.arithmatex:
+      generic: true
 
   - pymdownx.superfences:
       custom_fences:
@@ -22,18 +21,12 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
 
-  - pymdownx.arithmatex:
-      generic: true
-
 extra_javascript:
   - javascripts/mathjax.js
-  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://unpkg.com/mermaid@11/dist/mermaid.min.js
   - javascripts/mermaid.js
   - javascripts/furigana.js
-
-extra:
-  math: true
 
 extra_css:
   - stylesheets/extra.css
@@ -44,7 +37,7 @@ nav:
   - Teste: teste.md
   - Japones: japones.md
   - Ingles: ingles.md
-  
+
   - Mathematics:
       - Logic: mathematics/logica.md
       - Conjuntos: mathematics/conjuntos.md
@@ -57,10 +50,12 @@ nav:
       - Prova de Existência: mathematics/existencia.md
       - Teoria dos Números: mathematics/numeros.md
       - Teoria dos Gráfos: mathematics/grafos.md
-      - Derivadas: mathematics/derivadas.md 
-      - Integrais: mathematics/integrais.md 
+      - Derivadas: mathematics/derivadas.md
+      - Integrais: mathematics/integrais.md
+
+  - Linux:
       - Linux: dispositivos/linux.md
 
   - C language:
       - C Language Medium Level: clang/medium.md
-      - C Language Advanced Level: clang/advanced
+      - C Language Advanced Level: clang/advanced.md

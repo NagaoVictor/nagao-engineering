@@ -6,15 +6,19 @@
 
 
 
-$\\sin^2(x)=\\frac{1-\\cos(2x)}{2}$
+$$
+
+\\sin^2(x)=\\frac{1-\\cos(2x)}{2}
+
+$$
 
 
 
-<br>
+$$
 
+\\cos^2(x)=\\frac{1+\\cos(2x)}{2}
 
-
-$\\cos^2(x)=\\frac{1+\\cos(2x)}{2}$
+$$
 
 
 
@@ -26,79 +30,83 @@ $\\cos^2(x)=\\frac{1+\\cos(2x)}{2}$
 
 
 
-$\\int \\sin(x)\\,dx=-\\cos(x)+C$
+$$
+
+\\int \\sin(x)\\,dx=-\\cos(x)+C
+
+$$
 
 
 
-<br>
+$$
+
+\\int \\cos(x)\\,dx=\\sin(x)+C
+
+$$
 
 
 
-$\\int \\cos(x)\\,dx=\\sin(x)+C$
+$$
+
+\\int \\tan(x)\\,dx=\\ln|\\sec(x)|+C
+
+$$
 
 
 
-<br>
+$$
+
+\\int \\cot(x)\\,dx=\\ln|\\sin(x)|+C
+
+$$
 
 
 
-$\\int \\tan(x)\\,dx=\\ln|\\sec(x)|+C$
+$$
+
+\\int \\sec^2(x)\\,dx=\\tan(x)+C
+
+$$
 
 
 
-<br>
+$$
+
+\\int \\csc^2(x)\\,dx=-\\cot(x)+C
+
+$$
 
 
 
-$\\int \\cot(x)\\,dx=\\ln|\\sin(x)|+C$
+$$
+
+\\int \\sec(x)\\tan(x)\\,dx=\\sec(x)+C
+
+$$
 
 
 
-<br>
+$$
+
+\\int \\csc(x)\\cot(x)\\,dx=-\\csc(x)+C
+
+$$
 
 
 
-$\\int \\sec^2(x)\\,dx=\\tan(x)+C$
+$$
+
+\\int \\sec(x)\\,dx=\\ln\\left|\\sec(x)+\\tan(x)\\right|+C
+
+$$
 
 
 
-<br>
+$$
 
+\\int \\csc(x)\\,dx=-\\ln\\left|\\csc(x)+\\cot(x)\\right|+C
 
-
-$\\int \\csc^2(x)\\,dx=-\\cot(x)+C$
-
-
-
-<br>
-
-
-
-$\\int \\sec(x)\\tan(x)\\,dx=\\sec(x)+C$
-
-
-
-<br>
-
-
-
-$\\int \\csc(x)\\cot(x)\\,dx=-\\csc(x)+C$
-
-
-
-<br>
-
-
-
-$\\int \\sec(x)\\,dx=\\ln\\left|\\sec(x)+\\tan(x)\\right|+C$
-
-
-
-<br>
-
-
-
-$\\int \\csc(x)\\,dx=-\\ln\\left|\\csc(x)+\\cot(x)\\right|+C$
+$$
 
 
 
@@ -110,15 +118,19 @@ $\\int \\csc(x)\\,dx=-\\ln\\left|\\csc(x)+\\cot(x)\\right|+C$
 
 
 
-$\\int e^x\\,dx=e^x+C$
+$$
+
+\\int e^x\\,dx=e^x+C
+
+$$
 
 
 
-<br>
+$$
 
+\\int a^x\\,dx=\\frac{a^x}{\\ln(a)}+C,\\qquad a>0,\\;a\\neq1
 
-
-$\\int a^x\\,dx=\\frac{a^x}{\\ln(a)}+C,\\qquad a>0,\\;a\\neq1$
+$$
 
 
 
@@ -130,15 +142,19 @@ $\\int a^x\\,dx=\\frac{a^x}{\\ln(a)}+C,\\qquad a>0,\\;a\\neq1$
 
 
 
-$\\int \\frac{1}{x}\\,dx=\\ln|x|+C$
+$$
+
+\\int\\frac1x\\,dx=\\ln|x|+C
+
+$$
 
 
 
-<br>
+$$
 
+\\int\\log\_a(x)\\,dx=\\frac{x\\ln(x)-x}{\\ln(a)}+C
 
-
-$\\int \\log\_a(x)\\,dx=\\frac{x\\ln(x)-x}{\\ln(a)}+C$
+$$
 
 
 
@@ -150,47 +166,35 @@ $\\int \\log\_a(x)\\,dx=\\frac{x\\ln(x)-x}{\\ln(a)}+C$
 
 
 
-$\\int \\sinh(x)\\,dx=\\cosh(x)+C$
+$$
+
+\\int\\sinh(x)\\,dx=\\cosh(x)+C
+
+$$
 
 
 
-<br>
+$$
+
+\\int\\cosh(x)\\,dx=\\sinh(x)+C
+
+$$
 
 
 
-$\\int \\cosh(x)\\,dx=\\sinh(x)+C$
+$$
+
+\\int\\operatorname{sech}^2(x)\\,dx=\\tanh(x)+C
+
+$$
 
 
 
-<br>
+$$
 
+\\int\\operatorname{csch}^2(x)\\,dx=-\\coth(x)+C
 
-
-$\\int \\operatorname{sech}^2(x)\\,dx=\\tanh(x)+C$
-
-
-
-<br>
-
-
-
-$\\int \\operatorname{csch}^2(x)\\,dx=-\\coth(x)+C$
-
-
-
-<br>
-
-
-
-$\\int \\operatorname{sech}(x)\\operatorname{tanh}(x)\\,dx=-\\operatorname{sech}(x)+C$
-
-
-
-<br>
-
-
-
-$\\int \\operatorname{csch}(x)\\operatorname{coth}(x)\\,dx=-\\operatorname{csch}(x)+C$
+$$
 
 
 
@@ -198,7 +202,7 @@ $\\int \\operatorname{csch}(x)\\operatorname{coth}(x)\\,dx=-\\operatorname{csch}
 
 
 
-\# Regra Geral da Substituição (u-substitution)
+\# Regra Geral da Substituição
 
 
 
@@ -206,15 +210,11 @@ Se
 
 
 
-$u=g(x)$
+$$
 
+u=g(x)
 
-
-e
-
-
-
-$du=g'(x)\\,dx$
+$$
 
 
 
@@ -222,7 +222,23 @@ então
 
 
 
-$\\int f(g(x))\\,g'(x)\\,dx=\\int f(u)\\,du$
+$$
+
+du=g'(x)\\,dx
+
+$$
+
+
+
+e
+
+
+
+$$
+
+\\int f(g(x))g'(x)\\,dx=\\int f(u)\\,du
+
+$$
 
 
 
@@ -234,55 +250,11 @@ $\\int f(g(x))\\,g'(x)\\,dx=\\int f(u)\\,du$
 
 
 
-Se
+$$
 
+\\int u\\,dv=uv-\\int v\\,du
 
-
-$u=f(x)$
-
-
-
-e
-
-
-
-$dv=g(x)\\,dx$
-
-
-
-então
-
-
-
-$\\int u\\,dv=uv-\\int v\\,du$
-
-
-
-\---
-
-
-
-\# Integrais Racionais
-
-
-
-$\\int \\frac{1}{a^2+x^2}\\,dx=\\frac{1}{a}\\arctan\\left(\\frac{x}{a}\\right)+C$
-
-
-
-<br>
-
-
-
-$\\int \\frac{1}{\\sqrt{a^2-x^2}}\\,dx=\\arcsin\\left(\\frac{x}{a}\\right)+C$
-
-
-
-<br>
-
-
-
-$\\int \\frac{1}{x^2-a^2}\\,dx=\\frac{1}{2a}\\ln\\left|\\frac{x-a}{x+a}\\right|+C$
+$$
 
 
 
@@ -294,7 +266,11 @@ $\\int \\frac{1}{x^2-a^2}\\,dx=\\frac{1}{2a}\\ln\\left|\\frac{x-a}{x+a}\\right|+
 
 
 
-$\\int\_a^b f(x)\\,dx=F(b)-F(a)$
+$$
+
+\\int\_a^b f(x)\\,dx=F(b)-F(a)
+
+$$
 
 
 
@@ -302,7 +278,11 @@ onde
 
 
 
-$F'(x)=f(x)$
+$$
+
+F'(x)=f(x)
+
+$$
 
 
 
@@ -310,27 +290,31 @@ $F'(x)=f(x)$
 
 
 
-\# Propriedades das Integrais
+\# Propriedades
 
 
 
-$\\int (f(x)+g(x))\\,dx=\\int f(x)\\,dx+\\int g(x)\\,dx$
+$$
+
+\\int(f+g)\\,dx=\\int f\\,dx+\\int g\\,dx
+
+$$
 
 
 
-<br>
+$$
+
+\\int(f-g)\\,dx=\\int f\\,dx-\\int g\\,dx
+
+$$
 
 
 
-$\\int (f(x)-g(x))\\,dx=\\int f(x)\\,dx-\\int g(x)\\,dx$
+$$
 
+\\int cf\\,dx=c\\int f\\,dx
 
-
-<br>
-
-
-
-$\\int c\\,f(x)\\,dx=c\\int f(x)\\,dx$
+$$
 
 
 
@@ -342,19 +326,11 @@ $\\int c\\,f(x)\\,dx=c\\int f(x)\\,dx$
 
 
 
-Se
+$$
 
+\\frac{d}{dx}\\left(\\int\_a^x f(t)\\,dt\\right)=f(x)
 
-
-$F'(x)=f(x)$
-
-
-
-então
-
-
-
-$\\frac{d}{dx}\\left(\\int\_a^x f(t)\\,dt\\right)=f(x)$
+$$
 
 
 
@@ -366,19 +342,29 @@ $\\frac{d}{dx}\\left(\\int\_a^x f(t)\\,dt\\right)=f(x)$
 
 
 
-$\\int\_a^{\\infty}f(x)\\,dx=\\lim\_{b\\to\\infty}\\int\_a^b f(x)\\,dx$
+$$
+
+\\int\_a^\\infty f(x)\\,dx
+
+=
+
+\\lim\_{b\\to\\infty}\\int\_a^b f(x)\\,dx
+
+$$
 
 
 
-<br>
+$$
 
+\\int\_{-\\infty}^{\\infty}f(x)\\,dx
 
-
-$\\int\_{-\\infty}^{\\infty}f(x)\\,dx=
+=
 
 \\lim\_{a\\to-\\infty}\\int\_a^0f(x)\\,dx
 
 \+
 
-\\lim\_{b\\to\\infty}\\int\_0^bf(x)\\,dx$
+\\lim\_{b\\to\\infty}\\int\_0^bf(x)\\,dx
+
+$$
 
