@@ -1,6 +1,7 @@
-document$.subscribe(function() {
+document$.subscribe(() => {
     mermaid.initialize({
-        startOnLoad: true,
-        theme: "default"
+        startOnLoad: false
     });
+
+    mermaid.run();
 });
