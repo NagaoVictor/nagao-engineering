@@ -14,10 +14,6 @@ $\\int k\\,dx=kx+C$
 
 
 
-\---
-
-
-
 \## Integral do monômio
 
 
@@ -38,11 +34,7 @@ $\\int ax^n\\,dx=\\frac{ax^{n+1}}{n+1}+C$
 
 
 
-\---
-
-
-
-\## Integral da soma
+\## Propriedades da Integral
 
 
 
@@ -50,27 +42,11 @@ $\\int(f+g)\\,dx=\\int f\\,dx+\\int g\\,dx$
 
 
 
-\---
-
-
-
-\## Integral da diferença
-
-
-
 $\\int(f-g)\\,dx=\\int f\\,dx-\\int g\\,dx$
 
 
 
-\---
-
-
-
-\## Constante multiplicativa
-
-
-
-$\\int cf(x)\\,dx=c\\int f(x)\\,dx$
+$\\int c\\,f(x)\\,dx=c\\int f(x)\\,dx$
 
 
 
@@ -78,11 +54,11 @@ $\\int cf(x)\\,dx=c\\int f(x)\\,dx$
 
 
 
-\# Integração por Substituição
+\# Métodos de Integração
 
 
 
-\## Regra da Cadeia Inversa
+\## Regra da Substituição
 
 
 
@@ -98,15 +74,7 @@ $\\int f(g(x))g'(x)\\,dx=\\int f(u)\\,du$
 
 
 
-\---
-
-
-
-\# Integração por Partes
-
-
-
-\## Regra do Produto Inversa
+\## Integração por Partes
 
 
 
@@ -138,7 +106,7 @@ $\\int a^x\\,dx=\\frac{a^x}{\\ln(a)}+C$
 
 
 
-$\\int\\frac1x\\,dx=\\ln|x|+C$
+$\\int\\frac{1}{x}\\,dx=\\ln\\left|x\\right|+C$
 
 
 
@@ -170,11 +138,11 @@ $\\int\\cos(x)\\,dx=\\sin(x)+C$
 
 
 
-$\\int\\tan(x)\\,dx=\\ln|\\sec(x)|+C$
+$\\int\\tan(x)\\,dx=\\ln\\left|\\sec(x)\\right|+C$
 
 
 
-$\\int\\cot(x)\\,dx=\\ln|\\sin(x)|+C$
+$\\int\\cot(x)\\,dx=\\ln\\left|\\sin(x)\\right|+C$
 
 
 
@@ -210,7 +178,7 @@ $\\int\\csc(x)\\,dx=-\\ln\\left|\\csc(x)+\\cot(x)\\right|+C$
 
 
 
-$\\int\\frac1{\\sqrt{1-x^2}}\\,dx=\\arcsin(x)+C$
+$\\int\\frac{1}{\\sqrt{1-x^2}}\\,dx=\\arcsin(x)+C$
 
 
 
@@ -218,7 +186,7 @@ $\\int\\frac{-1}{\\sqrt{1-x^2}}\\,dx=\\arccos(x)+C$
 
 
 
-$\\int\\frac1{1+x^2}\\,dx=\\arctan(x)+C$
+$\\int\\frac{1}{1+x^2}\\,dx=\\arctan(x)+C$
 
 
 
@@ -226,7 +194,7 @@ $\\int\\frac{-1}{1+x^2}\\,dx=\\operatorname{arccot}(x)+C$
 
 
 
-$\\int\\frac1{|x|\\sqrt{x^2-1}}\\,dx=\\operatorname{arcsec}(x)+C$
+$\\int\\frac{1}{|x|\\sqrt{x^2-1}}\\,dx=\\operatorname{arcsec}(x)+C$
 
 
 
@@ -238,7 +206,7 @@ $\\int\\frac{-1}{|x|\\sqrt{x^2-1}}\\,dx=\\operatorname{arccsc}(x)+C$
 
 
 
-\# Integrais Hiperbólicas
+\# Funções Hiperbólicas
 
 
 
@@ -246,11 +214,11 @@ $\\int\\frac{-1}{|x|\\sqrt{x^2-1}}\\,dx=\\operatorname{arccsc}(x)+C$
 
 
 
-$\\sinh(x)=\\frac{e^x-e^{-x}}2$
+$\\sinh(x)=\\frac{e^x-e^{-x}}{2}$
 
 
 
-$\\cosh(x)=\\frac{e^x+e^{-x}}2$
+$\\cosh(x)=\\frac{e^x+e^{-x}}{2}$
 
 
 
@@ -262,11 +230,11 @@ $\\coth(x)=\\frac{e^x+e^{-x}}{e^x-e^{-x}}$
 
 
 
-$\\operatorname{sech}(x)=\\frac2{e^x+e^{-x}}$
+$\\operatorname{sech}(x)=\\frac{2}{e^x+e^{-x}}$
 
 
 
-$\\operatorname{csch}(x)=\\frac2{e^x-e^{-x}}$
+$\\operatorname{csch}(x)=\\frac{2}{e^x-e^{-x}}$
 
 
 
@@ -274,7 +242,7 @@ $\\operatorname{csch}(x)=\\frac2{e^x-e^{-x}}$
 
 
 
-\## Integrais Hiperbólicas
+\# Integrais Hiperbólicas
 
 
 
@@ -290,7 +258,7 @@ $\\int\\tanh(x)\\,dx=\\ln(\\cosh(x))+C$
 
 
 
-$\\int\\coth(x)\\,dx=\\ln|\\sinh(x)|+C$
+$\\int\\coth(x)\\,dx=\\ln\\left|\\sinh(x)\\right|+C$
 
 
 
@@ -318,15 +286,15 @@ $\\int\\operatorname{csch}(x)\\operatorname{coth}(x)\\,dx=-\\operatorname{csch}(
 
 
 
-$\\int\\frac1{a^2+x^2}\\,dx=\\frac1a\\arctan\\left(\\frac xa\\right)+C$
+$\\int\\frac{1}{a^2+x^2}\\,dx=\\frac{1}{a}\\arctan\\left(\\frac{x}{a}\\right)+C$
 
 
 
-$\\int\\frac1{\\sqrt{a^2-x^2}}\\,dx=\\arcsin\\left(\\frac xa\\right)+C$
+$\\int\\frac{1}{\\sqrt{a^2-x^2}}\\,dx=\\arcsin\\left(\\frac{x}{a}\\right)+C$
 
 
 
-$\\int\\frac1{x^2-a^2}\\,dx=\\frac1{2a}\\ln\\left|\\frac{x-a}{x+a}\\right|+C$
+$\\int\\frac{1}{x^2-a^2}\\,dx=\\frac{1}{2a}\\ln\\left|\\frac{x-a}{x+a}\\right|+C$
 
 
 
@@ -338,7 +306,7 @@ $\\int\\frac1{x^2-a^2}\\,dx=\\frac1{2a}\\ln\\left|\\frac{x-a}{x+a}\\right|+C$
 
 
 
-$\\int\_a^bf(x)\\,dx=F(b)-F(a)$
+$\\int\_a^b f(x)\\,dx=F(b)-F(a)$
 
 
 
@@ -354,7 +322,7 @@ $F'(x)=f(x)$
 
 
 
-$\\frac d{dx}\\left(\\int\_a^xf(t)\\,dt\\right)=f(x)$
+$\\frac{d}{dx}\\left(\\int\_a^x f(t)\\,dt\\right)=f(x)$
 
 
 
@@ -366,7 +334,7 @@ $\\frac d{dx}\\left(\\int\_a^xf(t)\\,dt\\right)=f(x)$
 
 
 
-$\\int\_a^\\infty f(x)\\,dx=\\lim\_{b\\to\\infty}\\int\_a^bf(x)\\,dx$
+$\\int\_a^{\\infty}f(x)\\,dx=\\lim\_{b\\to\\infty}\\int\_a^b f(x)\\,dx$
 
 
 
