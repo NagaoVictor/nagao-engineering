@@ -2,10 +2,15 @@ site_name: Nagao Engineering Encyclopedia
 
 theme:
   name: material
+  features:
+    - content.code.copy
+    - content.code.annotate
+    - content.code.select
+    - content.code.highlight
+    - content.code.mermaid   # ← ATIVA MERMAID NO MKDOCS MATERIAL
 
 markdown_extensions:
   - tables
-
   - admonition
 
   - toc:
@@ -15,7 +20,6 @@ markdown_extensions:
       generic: true
 
   - pymdownx.details
-
   - pymdownx.highlight
 
   - pymdownx.superfences:
@@ -25,6 +29,7 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
 
 extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js   # ← ADICIONADO
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
   - javascripts/furigana.js
