@@ -1,3 +1,9 @@
+mermaid.initialize({
+  startOnLoad: false
+});
+
 document$.subscribe(() => {
-  mermaid.initialize({ startOnLoad: true });
+  mermaid.run({
+    querySelector: ".mermaid"
+  });
 });
