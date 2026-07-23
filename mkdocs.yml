@@ -67,3 +67,4 @@ nav:
   - C language:
       - C Language Medium Level: clang/medium.md
       - C Language Advanced Level: clang/advanced.md
+      - C Arrays: clang/arrays.md

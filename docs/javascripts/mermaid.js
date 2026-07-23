@@ -1,7 +1,3 @@
-document$.subscribe(() => {
-    mermaid.initialize({
-        startOnLoad: false
-    });
-
-    mermaid.run();
+document.addEventListener("DOMContentLoaded", function () {
+  mermaid.initialize({ startOnLoad: true });
 });
