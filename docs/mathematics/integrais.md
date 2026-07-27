@@ -45,7 +45,7 @@ $\int(f-g)\,dx=\int f\,dx-\int g\,dx$
 
 
 
-$ \int c\,f(x)\,dx=c\int f(x)\,dx$
+$\int c\,f(x)\,dx=c\int f(x)\,dx$
 
 
 
