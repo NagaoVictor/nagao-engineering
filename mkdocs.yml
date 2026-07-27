@@ -2,10 +2,15 @@ site_name: Nagao Engineering Encyclopedia
 
 theme:
   name: material
+  features:
+    - content.code.copy
+    - content.code.annotate
+    - content.code.select
+    - content.code.highlight
+    - content.code.mermaid   # ← ATIVA MERMAID NO MKDOCS MATERIAL
 
 markdown_extensions:
   - tables
-
   - admonition
 
   - toc:
@@ -15,7 +20,6 @@ markdown_extensions:
       generic: true
 
   - pymdownx.details
-
   - pymdownx.highlight
 
   - pymdownx.superfences:
@@ -25,12 +29,10 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
 
 extra_javascript:
-  - javascripts/mathjax.js
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
-
-  - https://unpkg.com/mermaid@11/dist/mermaid.min.js
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
   - javascripts/mermaid.js
-
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
   - javascripts/furigana.js
 
 extra_css:
@@ -67,3 +69,4 @@ nav:
   - C language:
       - C Language Medium Level: clang/medium.md
       - C Language Advanced Level: clang/advanced.md
+      - C Arrays: clang/arrays.md

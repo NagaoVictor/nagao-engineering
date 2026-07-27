@@ -1,10 +1,14 @@
-\# Teste
+\# Mermaid Test
 
 
 
-$$
+```mermaid
 
-\\int x\\,dx
+graph TD
 
-$$
+&#x20;   A\[Integral] --> B\[Derivada]
+
+&#x20;   B --> C\[Teorema Fundamental]
+
+```
 
