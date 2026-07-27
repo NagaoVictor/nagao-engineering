@@ -76,23 +76,23 @@ $\int f(g(x))g'(x)\,dx=\int f(u)\,du$
 
 
 
-$\\int u\\,dv=uv-\\int v\\,du$
+$\int u\,dv=uv-\int v\,du$
 
 
 
-\---
+---
 
 
 
-\# Integrais Exponenciais
+# Integrais Exponenciais
 
 
 
-$\\int e^x\\,dx=e^x+C$
+$\int e^x\,dx=e^x+C$
 
 
 
-$\\int a^x\\,dx=\\frac{a^x}{\\ln(a)}+C$
+$\int a^x\,dx=\frac{a^x}{\ln(a)}+C$
 
 
 
