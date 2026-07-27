@@ -1,8 +1,7 @@
-\# Integrais Fundamentais
+# Integrais Fundamentais
 
 
-
-\## Integral da constante
+## Integral da constante
 
 
 
@@ -10,7 +9,7 @@ $f(x)=k$
 
 
 
-$\\int k\\,dx=kx+C$
+$\int k\,dx=kx+C$
 
 
 
