@@ -455,3 +455,10 @@ $\left\{
 = $\frac{4}{3}(x+4)^{\frac{3}{2}} - 14(x+4)^{\frac{1}{2}} + C$
 
 ---
+
+$\int \frac{1}{\cos x - 1} \, dx,$
+= $\int \frac{\cos x + 1}{(\cos x - 1)(\cos x + 1)} \, dx,$
+= $\int (\frac{\cos x}{\sin x})(\frac{1}{\sin x}) + \csc^2 x\, dx,$
+= $\int (\cot x \csc x + \csc^2 x)\, dx$
+
+---
