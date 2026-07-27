@@ -45,19 +45,18 @@ $\int(f-g)\,dx=\int f\,dx-\int g\,dx$
 
 
 
-$\\int c\\,f(x)\\,dx=c\\int f(x)\\,dx$
+$ \int c\,f(x)\,dx=c\int f(x)\,dx$
 
 
 
 \---
 
 
-
-\# Métodos de Integração
-
+# Métodos de Integração
 
 
-\## Regra da Substituição
+
+## Regra da Substituição
 
 
 
@@ -65,15 +64,15 @@ $u=g(x)$
 
 
 
-$du=g'(x)\\,dx$
+$du=g'(x)\,dx$
 
 
 
-$\\int f(g(x))g'(x)\\,dx=\\int f(u)\\,du$
+$\int f(g(x))g'(x)\,dx=\int f(u)\,du$
 
 
 
-\## Integração por Partes
+## Integração por Partes
 
 
 
