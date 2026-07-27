@@ -403,7 +403,7 @@ $\left\{
   du = \sec^2 (x)\, dx
 \end{array} 
 \right.$
-= $\sqrt[3]{u}\, du$ = $\int u^{\frac{1}{3}}\, du$ = $ \frac{3}{4}u^{\frac{4}{3}} + C$ = $\frac{3}{4}\tan^{\frac{4}{3}}x + C$
+= $\sqrt[3]{u}\, du$ = $\int u^{\frac{1}{3}}\, du$ = $\frac{3}{4}u^{\frac{4}{3}} + C$ = $\frac{3}{4}\tan^{\frac{4}{3}}x + C$
 
 ---
 
