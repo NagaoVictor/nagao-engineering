@@ -33,11 +33,11 @@ $\int ax^n\,dx=\frac{ax^{n+1}}{n+1}+C$
 
 
 
-\## Propriedades da Integral
+## Propriedades da Integral
 
 
 
-$\\int(f+g)\\,dx=\\int f\\,dx+\\int g\\,dx$
+$\int(f+g)\,dx=\int f\,dx+\int g\,dx$
 
 
 
