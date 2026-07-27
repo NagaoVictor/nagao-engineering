@@ -338,3 +338,51 @@ $\int\_a^{\infty}f(x)\,dx=\lim\_{b\to\infty}\int\_a^b f(x)\,dx$
 
 $\int\_{-\infty}^{\infty}f(x)\,dx=\lim\_{a\to-\infty}\int\_a^0f(x)\,dx+\lim\_{b\to\infty}\int\_0^bf(x)\,dx$
 
+
+# Exemplos Clássicos de Resolução de Integrais
+
+## Integrais por substituição
+
+Aqui dedicarei as itegrais ao professor **Math Sorcerer**
+Relações fundamentais <br>
+
+$\int \frac{1}{x^4}\,dx$ = $\int x^{-4}\,dx$ = $\frac{x^{-3}}{-3} + C$
+
+$\int \frac{1}{\sqrt{5x}}\,dx$ <br>{$u = 5x \to du = 5\, dx \to \frac{du}{5} = dx$} <br>$\frac{1}{5}\int\frac{1}{\sqrt{u}}du$ 
+
+$\int 2x^2 + \frac{1}{(4x)^2}\, dx$ = $\int 2x^2 + \frac{1}{16}x^{-2}\, dx$ = $\frac{2}{3}x^{3}-\frac{1}{16}x^{-1} + C$
+
+$\int \frac{1}{\cos^2x}\, dx$ = $\int \sec^2x \, dx$ = $\tan x + C$
+
+$\int \sqrt{x} + \frac{1}{8\sqrt{x}}\, dx$ = $\int x^{\frac{1}{2}} + \frac{1}{8}x^{\frac{-1}{2}}\, dx$ = $\frac{2}{3}x^{\frac{2}{3}} - \frac{1}{4}x^{\frac{-1}{2}} + C$
+
+$\int \frac{t - t^3}{\sqrt{t}}\,dt$ = $\int \frac{t}{t^{\frac{1}{2}}} - \frac{t^3}{t^{\frac{1}{2}}}\, dt$ = $\int t^{\frac{1}{2}} - t^{\frac{5}{2}}\, dt$ = $\frac{2}{3}t^{\frac{3}{2}}- \frac{2}{7}t^{\frac{7}{2}} + C$
+
+$\int 2(\sec^2\theta - 7\sin\theta)\, d\theta$ = $2\int (\sec^2\theta - 7\sin\theta)\, d\theta = 2(\tan\theta + 7\cos\theta) + C$
+
+$\int(x+1)(3x-2)\, dx$ = $\int(3x^2 - 2x + 3x - 2)\,dx$ = $x^3 + \frac{x^2}{2} - 2x + C$
+
+$\int \sec y\tan y - \csc^2y\, dy$ = $\sec y + \cot y + C$
+
+$\int \theta^8 + \sec^2\theta\, d\theta$ = $\frac{\theta^9}{9} + \tan^2\theta + C$
+
+$\int \frac{\cos x}{1 - \cos^2x}\, dx$ = $\int \frac{\cos x}{\sin^2x}\, dx$ = $\int \frac{\cos x}{\sin x}.\frac{1}{\sin x}\, dx$ = $\int \cot x \csc x\, dx$ = $-\csc x + C$ 
+
+$\int \frac{\sin 2x}{\sin x}\, dx$ = $\int \frac{2\sin x \cos x}{\sin x}\, dx$ = $2\int \cos x\, dx$ = $2\sin x + C$
+
+$\int \frac{3x}{(x^2 + 17)^5}\, dx$,
+$
+\left\{ 
+\begin{array}{l}
+  u = x^2 + 17\\
+  du = 2x\, dx\\
+  \frac{du}{2} = x\, dx
+\end{array} 
+\right.
+$
+= $ \frac{3}{2} \int u^{-5}\, du = \frac{3}{2}(\frac{u^{-4}}{-4} + C) = \frac{-3}{8}(x^2 + 17)^{-4} + C$ 
+
+
+
+
+
