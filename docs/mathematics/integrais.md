@@ -41,7 +41,7 @@ $\int(f+g)\,dx=\int f\,dx+\int g\,dx$
 
 
 
-$\\int(f-g)\\,dx=\\int f\\,dx-\\int g\\,dx$
+$\int(f-g)\,dx=\int f\,dx-\int g\,dx$
 
 
 
