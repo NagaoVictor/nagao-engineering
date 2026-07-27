@@ -13,7 +13,7 @@ $\int k\,dx=kx+C$
 
 
 
-\## Integral do monômio
+## Integral do monômio
 
 
 
@@ -21,7 +21,7 @@ $f(x)=x^n$
 
 
 
-$\\int x^n\\,dx=\\frac{x^{n+1}}{n+1}+C \\qquad (n\\neq-1)$
+$\int x^n\,dx=\frac{x^{n+1}}{n+1}+C \qquad (n\neq-1)$
 
 
 
@@ -29,7 +29,7 @@ $f(x)=ax^n$
 
 
 
-$\\int ax^n\\,dx=\\frac{ax^{n+1}}{n+1}+C$
+$\int ax^n\,dx=\frac{ax^{n+1}}{n+1}+C$
 
 
 
