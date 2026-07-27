@@ -49,7 +49,7 @@ $ \int c\,f(x)\,dx=c\int f(x)\,dx$
 
 
 
-\---
+---
 
 
 # Métodos de Integração
@@ -96,83 +96,83 @@ $\int a^x\,dx=\frac{a^x}{\ln(a)}+C$
 
 
 
-\---
+---
 
 
 
-\# Integrais Logarítmicas
+# Integrais Logarítmicas
 
 
 
-$\\int\\frac{1}{x}\\,dx=\\ln|x|+C$
+$\int\frac{1}{x}\,dx=\ln|x|+C$
 
 
 
-$\\int\\ln(x)\\,dx=x\\ln(x)-x+C$
+$\int\ln(x)\,dx=x\ln(x)-x+C$
 
 
 
-$\\int\\log\_a(x)\\,dx=\\frac{x\\ln(x)-x}{\\ln(a)}+C$
+$\int\log\_a(x)\,dx=\frac{x\ln(x)-x}{\ln(a)}+C$
 
 
 
-\---
+---
 
 
 
-\# Integrais Trigonométricas
+# Integrais Trigonométricas
 
 
 
-\## Formato Simples
+## Formato Simples
 
 
 
-$\\int\\sin(x)\\,dx=-\\cos(x)+C$
+$\int\sin(x)\,dx=-\cos(x)+C$
 
 
 
-$\\int\\cos(x)\\,dx=\\sin(x)+C$
+$\int\cos(x)\,dx=\sin(x)+C$
 
 
 
-$\\int\\tan(x)\\,dx=\\ln|\\sec(x)|+C$
+$\int\tan(x)\,dx=\ln|\sec(x)|+C$
 
 
 
-$\\int\\cot(x)\\,dx=\\ln|\\sin(x)|+C$
+$\int\cot(x)\,dx=\ln|\sin(x)|+C$
 
 
 
-$\\int\\sec^2(x)\\,dx=\\tan(x)+C$
+$\int\sec^2(x)\,dx=\tan(x)+C$
 
 
 
-$\\int\\csc^2(x)\\,dx=-\\cot(x)+C$
+$\int\csc^2(x)\,dx=-\cot(x)+C$
 
 
 
-$\\int\\sec(x)\\tan(x)\\,dx=\\sec(x)+C$
+$\int\sec(x)\tan(x)\,dx=\sec(x)+C$
 
 
 
-$\\int\\csc(x)\\cot(x)\\,dx=-\\csc(x)+C$
+$\int\csc(x)\cot(x)\,dx=-\csc(x)+C$
 
 
 
-$\\int\\sec(x)\\,dx=\\ln|\\sec(x)+\\tan(x)|+C$
+$\int\sec(x)\,dx=\ln|\sec(x)+\tan(x)|+C$
 
 
 
-$\\int\\csc(x)\\,dx=-\\ln|\\csc(x)+\\cot(x)|+C$
+$\int\csc(x)\,dx=-\ln|\csc(x)+\cot(x)|+C$
 
 
 
-\---
+---
 
 
 
-\# Integrais Trigonométricas Inversas
+# Integrais Trigonométricas Inversas
 
 
 
