@@ -176,135 +176,135 @@ $\int\csc(x)\,dx=-\ln|\csc(x)+\cot(x)|+C$
 
 
 
-$\\int\\frac{1}{\\sqrt{1-x^2}}\\,dx=\\arcsin(x)+C$
+$\int\frac{1}{\sqrt{1-x^2}}\,dx=\arcsin(x)+C$
 
 
 
-$\\int\\frac{-1}{\\sqrt{1-x^2}}\\,dx=\\arccos(x)+C$
+$\int\frac{-1}{\sqrt{1-x^2}}\,dx=\arccos(x)+C$
 
 
 
-$\\int\\frac{1}{1+x^2}\\,dx=\\arctan(x)+C$
+$\int\frac{1}{1+x^2}\,dx=\arctan(x)+C$
 
 
 
-$\\int\\frac{-1}{1+x^2}\\,dx=\\mathrm{arccot}(x)+C$
+$\int\frac{-1}{1+x^2}\,dx=\mathrm{arccot}(x)+C$
 
 
 
-$\\int\\frac{1}{|x|\\sqrt{x^2-1}}\\,dx=\\mathrm{arcsec}(x)+C$
+$\int\frac{1}{|x|\sqrt{x^2-1}}\,dx=\mathrm{arcsec}(x)+C$
 
 
 
-$\\int\\frac{-1}{|x|\\sqrt{x^2-1}}\\,dx=\\mathrm{arccsc}(x)+C$
+$\int\frac{-1}{|x|\sqrt{x^2-1}}\,dx=\mathrm{arccsc}(x)+C$
 
 
 
-\---
+---
 
 
 
-\# Funções Hiperbólicas
+# Funções Hiperbólicas
 
 
 
-\## Definições Algébricas
+## Definições Algébricas
 
 
 
-$\\sinh(x)=\\frac{e^x-e^{-x}}{2}$
+$\sinh(x)=\frac{e^x-e^{-x}}{2}$
 
 
 
-$\\cosh(x)=\\frac{e^x+e^{-x}}{2}$
+$\cosh(x)=\frac{e^x+e^{-x}}{2}$
 
 
 
-$\\tanh(x)=\\frac{e^x-e^{-x}}{e^x+e^{-x}}$
+$\tanh(x)=\frac{e^x-e^{-x}}{e^x+e^{-x}}$
 
 
 
-$\\coth(x)=\\frac{e^x+e^{-x}}{e^x-e^{-x}}$
+$\coth(x)=\frac{e^x+e^{-x}}{e^x-e^{-x}}$
 
 
 
-$\\mathrm{sech}(x)=\\frac{2}{e^x+e^{-x}}$
+$\mathrm{sech}(x)=\frac{2}{e^x+e^{-x}}$
 
 
 
-$\\mathrm{csch}(x)=\\frac{2}{e^x-e^{-x}}$
+$\mathrm{csch}(x)=\frac{2}{e^x-e^{-x}}$
 
 
 
-\---
+---
 
 
 
-\# Integrais Hiperbólicas
+# Integrais Hiperbólicas
 
 
 
-$\\int\\sinh(x)\\,dx=\\cosh(x)+C$
+$\int\sinh(x)\,dx=\cosh(x)+C$
 
 
 
-$\\int\\cosh(x)\\,dx=\\sinh(x)+C$
+$\int\cosh(x)\,dx=\sinh(x)+C$
 
 
 
-$\\int\\tanh(x)\\,dx=\\ln(\\cosh(x))+C$
+$\int\tanh(x)\,dx=\ln(\cosh(x))+C$
 
 
 
-$\\int\\coth(x)\\,dx=\\ln|\\sinh(x)|+C$
+$\int\coth(x)\,dx=\ln|\sinh(x)|+C$
 
 
 
-$\\int\\mathrm{sech}^2(x)\\,dx=\\tanh(x)+C$
+$\int\mathrm{sech}^2(x)\,dx=\tanh(x)+C$
 
 
 
-$\\int\\mathrm{csch}^2(x)\\,dx=-\\coth(x)+C$
+$\int\mathrm{csch}^2(x)\,dx=-\coth(x)+C$
 
 
 
-$\\int\\mathrm{sech}(x)\\tanh(x)\\,dx=-\\mathrm{sech}(x)+C$
+$\int\mathrm{sech}(x)\tanh(x)\,dx=-\mathrm{sech}(x)+C$
 
 
 
-$\\int\\mathrm{csch}(x)\\coth(x)\\,dx=-\\mathrm{csch}(x)+C$
+$\int\mathrm{csch}(x)\coth(x)\,dx=-\mathrm{csch}(x)+C$
 
 
 
-\---
+---
 
 
 
-\# Integrais Racionais
+# Integrais Racionais
 
 
 
-$\\int\\frac{1}{a^2+x^2}\\,dx=\\frac{1}{a}\\arctan\\left(\\frac{x}{a}\\right)+C$
+$\int\frac{1}{a^2+x^2}\,dx=\frac{1}{a}\arctan\left(\frac{x}{a}\right)+C$
 
 
 
-$\\int\\frac{1}{\\sqrt{a^2-x^2}}\\,dx=\\arcsin\\left(\\frac{x}{a}\\right)+C$
+$\int\frac{1}{\sqrt{a^2-x^2}}\,dx=\arcsin\left(\frac{x}{a}\right)+C$
 
 
 
-$\\int\\frac{1}{x^2-a^2}\\,dx=\\frac{1}{2a}\\ln\\left|\\frac{x-a}{x+a}\\right|+C$
+$\int\frac{1}{x^2-a^2}\,dx=\frac{1}{2a}\ln\left|\frac{x-a}{x+a}\right|+C$
 
 
 
-\---
+---
 
 
 
-\# Integrais Definidas
+# Integrais Definidas
 
 
 
-$\\int\_a^b f(x)\\,dx=F(b)-F(a)$
+$\int\_a^b f(x)\,dx=F(b)-F(a)$
 
 
 
@@ -312,29 +312,29 @@ $F'(x)=f(x)$
 
 
 
-\---
+---
 
 
 
-\# Teorema Fundamental do Cálculo
+# Teorema Fundamental do Cálculo
 
 
 
-$\\frac{d}{dx}\\left(\\int\_a^x f(t)\\,dt\\right)=f(x)$
+$\frac{d}{dx}\left(\int\_a^x f(t)\,dt\right)=f(x)$
 
 
 
-\---
+---
 
 
 
-\# Integrais Impróprias
+# Integrais Impróprias
 
 
 
-$\\int\_a^{\\infty}f(x)\\,dx=\\lim\_{b\\to\\infty}\\int\_a^b f(x)\\,dx$
+$\int\_a^{\infty}f(x)\,dx=\lim\_{b\to\infty}\int\_a^b f(x)\,dx$
 
 
 
-$\\int\_{-\\infty}^{\\infty}f(x)\\,dx=\\lim\_{a\\to-\\infty}\\int\_a^0f(x)\\,dx+\\lim\_{b\\to\\infty}\\int\_0^bf(x)\\,dx$
+$\int\_{-\infty}^{\infty}f(x)\,dx=\lim\_{a\to-\infty}\int\_a^0f(x)\,dx+\lim\_{b\to\infty}\int\_0^bf(x)\,dx$
 
