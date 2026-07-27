@@ -371,16 +371,18 @@ $\int \frac{\cos x}{1 - \cos^2x}\, dx$ = $\int \frac{\cos x}{\sin^2x}\, dx$ = $\
 $\int \frac{\sin 2x}{\sin x}\, dx$ = $\int \frac{2\sin x \cos x}{\sin x}\, dx$ = $2\int \cos x\, dx$ = $2\sin x + C$
 
 $\int \frac{3x}{(x^2 + 17)^5}\, dx$,
-$$
-\left\{ 
+
+
+$\left\{ 
 \begin{array}{l}
   u = x^2 + 17\\
   du = 2x\, dx\\
   \frac{du}{2} = x\, dx
 \end{array} 
-\right.
-$$
-= $ \frac{3}{2} \int u^{-5}\, du = \frac{3}{2}(\frac{u^{-4}}{-4} + C) = \frac{-3}{8}(x^2 + 17)^{-4} + C$ 
+\right.$
+
+
+= $\frac{3}{2} \int u^{-5}\, du = \frac{3}{2}(\frac{u^{-4}}{-4} + C) = \frac{-3}{8}(x^2 + 17)^{-4} + C$ 
 
 
 
