@@ -370,6 +370,8 @@ $\int \frac{\cos x}{1 - \cos^2x}\, dx$ = $\int \frac{\cos x}{\sin^2x}\, dx$ = $\
 
 $\int \frac{\sin 2x}{\sin x}\, dx$ = $\int \frac{2\sin x \cos x}{\sin x}\, dx$ = $2\int \cos x\, dx$ = $2\sin x + C$
 
+---
+
 $\int \frac{3x}{(x^2 + 17)^5}\, dx$,
 $\left\{ 
 \begin{array}{l}
@@ -379,6 +381,8 @@ $\left\{
 \end{array} 
 \right.$
 = $\frac{3}{2} \int u^{-5}\, du = \frac{3}{2}(\frac{u^{-4}}{-4} + C) = \frac{-3}{8}(x^2 + 17)^{-4} + C$ 
+
+---
 
 $\int \sec^2(\sin 3x)\cos 3x\, dx$,
 $\left\{ 
@@ -390,6 +394,8 @@ $\left\{
 \right.$
 = $\frac{1}{3} \int \sec^2u\, du = \frac{1}{3}(\tan u) + C$ = $\frac{1}{3}\tan (\sin{(3x)}) + C$
 
+---
+
 $\int \sqrt[3]{\tan x}\sec^2\, dx$,
 $\left\{ 
 \begin{array}{l}
@@ -398,6 +404,8 @@ $\left\{
 \end{array} 
 \right.$
 = $\sqrt[3]{u}\, du$ = $\int u^{\frac{1}{3}}\, du$ = $ \frac{3}{4}u^{\frac{4}{3}} + C$ = $\frac{3}{4}\tan^{\frac{4}{3}}x + C$
+
+---
 
 $\int x^2 \sin x^3\, dx,$
 $\left\{ 
@@ -408,6 +416,8 @@ $\left\{
 \end{array} 
 \right.$
 = $\frac{1}{3} \int \sin u du$ = $-\frac{1}{3} \cos u + C$ = $-\frac{1}{3} \cos{x^3} + C$
+
+---
 
 $\int (x-5) \sqrt{x + 2}\, dx$
 $\left\{ 
@@ -420,6 +430,8 @@ $\left\{
 = $\int (u - 2- 5) \sqrt u\, du$ = $\int u^{\frac{3}{2}} - 7u^{\frac{1}{2}}\, du$ = $\frac{2}{5}u^{\frac{3}{2}} - \frac{14}{3}u^{\frac{3}{2}} + C$
 = $\frac{2}{5}(x+2)^{\frac{3}{2}} - \frac{14}{3}(x+2)^{\frac{3}{2}} + C$
 
+---
+
 $\int \sqrt{\tan 4x} \sec^2{4x}\, dx,$
 $\left\{ 
 \begin{array}{l}
@@ -428,6 +440,8 @@ $\left\{
 \end{array} 
 \right.$
 = $\frac{1}{4}\int \sqrt{u}\, du$ = $\frac{1}{4}(\frac{2}{3}u^{\frac{3}{2}}) + C$ = $\frac{1}{6} \tan^{\frac{3}{2}}{4x}$
+
+---
 
 $\int \frac{2x+1}{\sqrt{x+4}} \, dx,$
 $\left\{ 
@@ -439,3 +453,5 @@ $\left\{
 \right.$
 = $\int \frac{2u-7}{\sqrt{u}}\, du$ = $\int 2u^{\frac{1}{2}} - 7u^{\frac{-1}{2}}\, du$ = $\frac{4}{3}u^{\frac{3}{2}} - 14u^{\frac{1}{2}} + C$
 = $\frac{4}{3}(x+4)^{\frac{3}{2}} - 14(x+4)^{\frac{1}{2}} + C$
+
+---
