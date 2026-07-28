@@ -62,7 +62,7 @@ nav:
       - Teoria dos Gráfos: mathematics/grafos.md
       - Derivadas: mathematics/derivadas.md
       - Integrais: mathematics/integrais.md
-
+      - Graficos: mathematics/graficos.md
   - Linux:
       - Linux: dispositivos/linux.md
 
