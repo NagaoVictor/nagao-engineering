@@ -1,3 +1,5 @@
+```python
+
 import time
 
 def periodo_vazao(litros, vazao, retorno): #(Tamanho em Litros, Quanto tempo demorar para encher o galão, quanto tempo demora para esvaziar o galao)
@@ -160,3 +162,4 @@ print(d.sensor_continuo_status)
 
 
 periodo_vazao(40, 2.7, 7)
+```
