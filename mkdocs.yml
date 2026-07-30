@@ -65,7 +65,8 @@ nav:
       - Graficos: mathematics/graficos.md
   - Linux:
       - Linux: dispositivos/linux.md
-
+  - Python:
+      - Programação Orientada à Objetos: python/
   - C language:
       - C Language Medium Level: clang/medium.md
       - C Language Advanced Level: clang/advanced.md
