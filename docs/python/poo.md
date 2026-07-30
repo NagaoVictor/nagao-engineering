@@ -1,3 +1,6 @@
+
+```python
+
 import time
 
 def periodo_vazao(litros, vazao):
@@ -106,3 +109,4 @@ d.sensor_continuo_desativo()
 print(d.sensor_continuo_status)
 
 periodo_vazao(40, 2.7)
+```
