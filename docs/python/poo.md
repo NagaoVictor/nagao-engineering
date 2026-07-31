@@ -1,3 +1,5 @@
+```python
+
 import time
 
 timer = 0.01
@@ -162,3 +164,4 @@ d.sensor_continuo_ativo()
 print(d.sensor_continuo_status)
 d.sensor_continuo_desativo()
 print(d.sensor_continuo_status)
+```
