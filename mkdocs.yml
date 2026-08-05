@@ -65,6 +65,7 @@ nav:
       - Graficos: mathematics/graficos.md
   - Linux:
       - Linux: dispositivos/linux.md
+      - Elétrica: physics/eletrica.md
   - Python:
       - Programação Orientada à Objetos: python/poo.md
   - C language:
