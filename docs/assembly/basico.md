@@ -2,9 +2,11 @@
 
 ```assembly
 section .text
+
 global _start
 
 _start:
+
     ; Passo 1: Empurrar a string /flag para a pilha (stack) para obter o ponteiro dela
     mov rax, 0x67616c662f    ; Equivalente a galf/ em hex (little-endian: /flag)
     push rax
