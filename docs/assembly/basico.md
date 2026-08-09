@@ -1,5 +1,6 @@
 # Assembly Básico
 
+```assembly
 section .text
 global _start
 
@@ -8,7 +9,7 @@ _start:
     mov rax, 0x67616c662f    ; Equivalente a galf/ em hex (little-endian: /flag)
     push rax
 
-    ; O registrador RDI precisa apontar para a string "/flag"
+    ; O registrador RDI precisa apontar para a string /flag
     mov rdi, rsp            
 
     ; Passo 2: Chamar sys_open(filename="/flag", flags=0 (O_RDONLY), mode=0)
