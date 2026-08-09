@@ -1,4 +1,4 @@
-\# Assembly Básico
+# Assembly Básico
 
 
 
@@ -6,11 +6,11 @@
 
 section .text
 
-global \_start
+global _start
 
 
 
-\_start:
+_start:
 
 &#x20;   ; Passo 1: Empurrar a string "/flag" para a pilha (stack) para obter o ponteiro dela
 
@@ -28,13 +28,13 @@ global \_start
 
 &#x20;   
 
-&#x20;   ; Passo 2: Chamar sys\_open(filename="/flag", flags=0 (O\_RDONLY), mode=0)
+&#x20;   ; Passo 2: Chamar sys_open(filename="/flag", flags=0 (O_RDONLY), mode=0)
 
 &#x20;   xor rax, rax            ; RAX = 0 (mas na verdade para open a syscall é 2)
 
 &#x20;   mov al, 2               ; RAX = 2 (número da syscall open)
 
-&#x20;   xor rsi, rsi            ; RSI = 0 (O\_RDONLY)
+&#x20;   xor rsi, rsi            ; RSI = 0 (O_RDONLY)
 
 &#x20;   syscall                 ; Dispara a interrupção para o Kernel abrir o arquivo
 
@@ -46,7 +46,7 @@ global \_start
 
 
 
-&#x20;   ; Passo 3: Chamar sys\_read(fd, buffer, tamanho)
+&#x20;   ; Passo 3: Chamar sys_read(fd, buffer, tamanho)
 
 &#x20;   -- (continuamos daqui na próxima etapa)
 
