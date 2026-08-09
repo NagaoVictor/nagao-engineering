@@ -1,7 +1,6 @@
 # Assembly Básico
 
 ```assembly
-
 section .text
 global _start
 
