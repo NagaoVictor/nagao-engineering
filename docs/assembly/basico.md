@@ -1,5 +1,7 @@
 # Assembly Básico
 
+---
+
 section .text
 global _start
 
@@ -42,3 +44,5 @@ _start:
     xor rdi, rdi            ; Status de saída = 0
     mov al, 60              ; RAX = 60 (número da syscall exit no x86_64)
     syscall                 ; Fim da execução
+
+---
