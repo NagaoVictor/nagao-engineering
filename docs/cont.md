@@ -19,7 +19,7 @@
 
 ### Valor da Parcela Calculada
 $p$ = $\frac{1410420 - 49252}{71}$<br>
-$\color{red}  p$ = $\color{red} 19171.38$
+$\color{red}{p}$ = $\color{red} 19169.38$
 
 ------------------------------------------------
 
