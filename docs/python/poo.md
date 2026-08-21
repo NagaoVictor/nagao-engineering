@@ -72,7 +72,7 @@ class Device:
         return cls._instancia
     info = """ Um galão cilíndrico contendo 3 entradas para para substâncias distintas """
    
-    def _init_(self):
+    def __init__(self):
         # Porta do galão
         self._porta = 0
         # Sensor
