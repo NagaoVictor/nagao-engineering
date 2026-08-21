@@ -62,7 +62,7 @@ OBS: Os valores são aproximados em 2 casas decimais!
 
 # Juros Composto
 
-   $m$=$c(1+i)^t$
+$m$=$c(1+i)^t$
    - m = montante
    - c = capital
    - i = taxa de juros (em numeros decimais)
