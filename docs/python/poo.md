@@ -37,7 +37,7 @@ def periodo_vazao(litros, vazao, retorno): #(Tamanho em Litros, Quanto tempo dem
 
     saida_do_tanque = (galao/retorno)
     print(f"{galao: .2f} L")
-    print("-------------------")
+     print("-------------------")
     while (galao >= 0):
         
         time.sleep(timer) # Tempo para despejar todo os 40 cm para a próxima etapa
@@ -66,9 +66,9 @@ def periodo_vazao(litros, vazao, retorno): #(Tamanho em Litros, Quanto tempo dem
 
 class Device:
     _instancia = None
-    def _new_(cls):
+    def __new__(cls):
         if cls._instancia is None:
-            cls.instancia = super().new_(cls)
+            cls.instancia = super().__new__(cls)
         return cls._instancia
     info = """ Um galão cilíndrico contendo 3 entradas para para substâncias distintas """
    
