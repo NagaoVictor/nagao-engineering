@@ -68,7 +68,7 @@ class Device:
     _instancia = None
     def __new__(cls):
         if cls._instancia is None:
-            cls.instancia = super().__new__(cls)
+            cls._instancia = super().__new__(cls)
         return cls._instancia
     info = """ Um galão cilíndrico contendo 3 entradas para para substâncias distintas """
    
