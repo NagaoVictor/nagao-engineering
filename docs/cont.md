@@ -1,5 +1,4 @@
 # Valor do Carro 
-
 - Valor do carro com a garantia da bateria híbrida
   1.410.420 ienes
 
@@ -10,7 +9,7 @@
 
 ------------------------------------------------
 
-## Valor das **Parcelas** calculadas à Juros Simples <br>
+## Valor das **Parcelas** calculadas à Juros Simples
  $p$ = $\frac{v - i}{periodo}$<br>
   - p = Parcela calculada <br>
   - v = Valor total do carro <br>
