@@ -37,7 +37,7 @@ $p$ = $ 19169.38$
 
 ------------------------------------------------
 	
-# Valor em Ienes
+l# Valor em Ienes
    Com base no cálculo acima, é necessário a estimativa do preço total pago em 6 anos <br>
    Existe dois modos para calcular o valor relativo do carro: <br>
    **Cálculo de porcentagem** e **Cálculo total**
@@ -67,13 +67,12 @@ OBS: Os valores são aproximados em 2 casas decimais!
    - c = capital
    - i = taxa de juros (em numeros decimais)
    - t = periodo de investimento em mês <br>
-
-   $2101152 = 1410420(1+i)^{72}$
-   $\approx 1,48973 = (1+i)^{72}$
-   $\approx \sqrt[72]{1,48973} = (1+i)$
-   $\approx \sqrt[72]{1,48973} - 1= i$
-   $\approx 1.0055514 - 1= i$
-   $\approx 0.0055514 = i$
+$2101152 = 1410420(1+i)^{72}$
+$\approx 1,48973 = (1+i)^{72}$
+$\approx \sqrt[72]{1,48973} = (1+i)$
+$\approx \sqrt[72]{1,48973} - 1= i$
+$\approx 1.0055514 - 1= i$
+$\approx 0.0055514 = i$
 
   OBS: Isso significa que o valor é 0.0056<br>
   equivalente à 0.5551%  mensal à juros compostos<br>
