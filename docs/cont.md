@@ -37,7 +37,7 @@ $p$ = $ 19169.38$
 
 ------------------------------------------------
 	
-l# Valor em Ienes
+## Valor em Ienes
    Com base no cálculo acima, é necessário a estimativa do preço total pago em 6 anos <br>
    Existe dois modos para calcular o valor relativo do carro: <br>
    **Cálculo de porcentagem** e **Cálculo total**
@@ -60,7 +60,7 @@ OBS: Os valores são aproximados em 2 casas decimais!
 
 ------------------------------------------------
 
-# Juros Composto
+## Juros Composto
 
 $m$=$c(1+i)^t$
    - m = montante
@@ -68,7 +68,7 @@ $m$=$c(1+i)^t$
    - i = taxa de juros (em numeros decimais)
    - t = periodo de investimento em mês <br>
 
-$2101152 = 1410420(1+i)^{72}$
+$2101152 = 1410420 (1+i)^{72}$
 $\approx 1,48973 = (1+i)^{72}$
 $\approx \sqrt[72]{1,48973} = (1+i)$
 $\approx \sqrt[72]{1,48973} - 1= i$
@@ -80,7 +80,7 @@ $\approx 0.0055514 = i$
 
 ------------------------------------------------
 	
-# Juros Composto Método de Euler
+## Juros Composto Método de Euler
 
 $\frac{dm}{dt}$ = $m.k$ <br>
 $\frac{dm}{m}$ = $k. \, dt$ <br>
