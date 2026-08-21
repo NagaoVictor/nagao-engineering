@@ -67,6 +67,7 @@ OBS: Os valores são aproximados em 2 casas decimais!
    - c = capital
    - i = taxa de juros (em numeros decimais)
    - t = periodo de investimento em mês <br>
+
 $2101152 = 1410420(1+i)^{72}$
 $\approx 1,48973 = (1+i)^{72}$
 $\approx \sqrt[72]{1,48973} = (1+i)$
