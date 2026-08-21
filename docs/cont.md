@@ -19,7 +19,7 @@
 
 ### Valor da Parcela Calculada
 $p$ = $\frac{1410420 - 49252}{71}$<br>
-$\color{red}{p}$ = $\color{red} 19169.38$
+$p$ = $ 19169.38$
 
 ------------------------------------------------
 
@@ -32,11 +32,11 @@ $\color{red}{p}$ = $\color{red} 19169.38$
   - c = Valor combinado
   - x = A porcentagem de aumento do valor do carro
 
-  $v$ = $\frac{28900}{19171.38}$ $\approx$ $\color{red} 151\%$ <br>
+  $v$ = $\frac{28900}{19171.38}$ $\approx  151\%$ <br>
   Sabendo deste aumento de 151%, quais seriam os critérios de calculo para um aumento de 51% do valor já calculado?
 
 ------------------------------------------------
-
+	
 # Valor em Ienes
    Com base no cálculo acima, é necessário a estimativa do preço total pago em 6 anos <br>
    Existe dois modos para calcular o valor relativo do carro: <br>
