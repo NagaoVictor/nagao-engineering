@@ -25,12 +25,12 @@ $p$ = $19169.38$
 
 ## Aumento Relativo da Parcela
   O objetivo deste cálculo é entender quais são os motivos de um aumento excessivo do valor de uma parcela.
-  Ele calculará o valor em porcentagem do valor combinado em relação ao valor real pago.
-  $v$ = $c.x$ $\to$
-  $x$ = $\frac{v}{c}$
-  - v = Valor total pago após o periodo
-  - c = Valor combinado
-  - x = A porcentagem de aumento do valor do carro
+  Ele calculará o valor em porcentagem do valor combinado em relação ao valor real pago.<br>
+  $v$ = $c.x$ $\to$<br>
+  $x$ = $\frac{v}{c}$<br>
+  - v = Valor total pago após o periodo<br>
+  - c = Valor combinado<br>
+  - x = A porcentagem de aumento do valor do carro<br>
 
   $v$ = $\frac{28900}{19171.38}$ $\approx  151\%$ <br>
   Sabendo deste aumento de 151%, quais seriam os critérios de calculo para um aumento de 51% do valor já calculado?
@@ -43,17 +43,17 @@ $p$ = $19169.38$
    **Cálculo de porcentagem** e **Cálculo total**
    
 ####   **Cálculo de Porcentagem**
-   $x$ = $p*c$
-   - p = Porcentagem
-   - c = Valor combinado
+   $x$ = $p*c$<br>
+   - p = Porcentagem<br>
+   - c = Valor combinado<br>
    - x = Valor total à pagar <br>
    $x$ = $1.51 * 1,410,430$ = $2,101,152.00$
 
 ####  **Cálculo Total**
-   $x$ = $i + (p * t)$
-   - i = Valor de entrada
-   - p = Valor da parcela
-   - t = periodo
+   $x$ = $i + (p * t)$<br>
+   - i = Valor de entrada<br>
+   - p = Valor da parcela<br>
+   - t = periodo<br>
    $x$ = $49252 + (28900 * 71)$ = $2,101,152$
 
 OBS: Os valores são aproximados em 2 casas decimais!
@@ -62,17 +62,17 @@ OBS: Os valores são aproximados em 2 casas decimais!
 
 ## Juros Composto
 
-$m$=$c(1+i)^t$
-   - m = montante
-   - c = capital
-   - i = taxa de juros (em numeros decimais)
+$m$=$c(1+i)^t$<br>
+   - m = montante<br>
+   - c = capital<br>
+   - i = taxa de juros (em numeros decimais)<br>
    - t = periodo de investimento em mês <br>
 
-$2101152 = 1410420 (1+i)^{72}$
-$\approx 1,48973 = (1+i)^{72}$
-$\approx \sqrt[72]{1,48973} = (1+i)$
-$\approx \sqrt[72]{1,48973} - 1= i$
-$\approx 1.0055514 - 1= i$
+$2101152 = 1410420 (1+i)^{72}$<br>
+$\approx 1,48973 = (1+i)^{72}$<br>
+$\approx \sqrt[72]{1,48973} = (1+i)$<br>
+$\approx \sqrt[72]{1,48973} - 1= i$<br>
+$\approx 1.0055514 - 1= i$<br>
 $\approx 0.0055514 = i$
 
   OBS: Isso significa que o valor é 0.0056<br>
