@@ -67,7 +67,7 @@ OBS: Os valores são aproximados em 2 casas decimais!
    - c = capital
    - i = taxa de juros (em numeros decimais)
    - t = periodo de investimento em mês <br>
-   $2101152$ = $1410420(1+i)^{72}$
+   $2101152 = 1410420(1+i)^{72}$
    $\approx 1,48973 = (1+i)^{72}$
    $\approx \sqrt[72]{1,48973} = (1+i)$
    $\approx \sqrt[72]{1,48973} - 1= i$
@@ -78,7 +78,7 @@ OBS: Os valores são aproximados em 2 casas decimais!
   equivalente à 0.5551%  mensal à juros compostos<br>
 
 ------------------------------------------------
-
+	
 # Juros Composto Método de Euler
 
 $\frac{dm}{dt}$ = $m.k$ <br>
@@ -96,3 +96,4 @@ $\ln{1.0055514} \approx 0.00553604$
 OBS: Isso significa que o valor é 0.00553604<br>
   equivalente à 0.553604%  mensal à juros compostos<br>
   Quase o resultado método de juros compostos acima
+	
