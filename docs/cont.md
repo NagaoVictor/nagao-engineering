@@ -4,7 +4,7 @@
 
 - Valor **estimado** sem a garantia da bateria híbrida
   1.410.430 ienes - 126.000 ienes
-  ** Levando em conta o valor da garantia do Toyota Yaris com um valor $\approx$ 84.000 ienes
+  Levando em conta o valor da garantia do Toyota Yaris com um valor $\approx$ 84.000 ienes
   $1.410.430 - 126.000$ = $1.284.430$
 
 ------------------------------------------------
