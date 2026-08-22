@@ -76,31 +76,23 @@ int main(void) {
    int *counter = mmap(NULL, sizeof(int), 
                        PROT_READ | PROT_WRITE, 
                        MAP_SHARED | MAP_ANONYMOUS, -1, 0);
-
-
    if (counter == MAP_FAILED) {
        perror("mmap falhou");
        exit(EXIT_FAILURE);
    }
 
-
    // Inicializa o contador compartilhado
-
    *counter = 0;
-
    printf("Valor inicial do contador na RAM compartilhada: %d\n", *counter);
 
    // 2. Criação do processo filho
 
    pid_t pid = fork();
-
-
    if (pid < 0) {
        perror("fork falhou");
        munmap(counter, sizeof(int));
        exit(EXIT_FAILURE);
    }
-
 
    if (pid == 0) {
        // --- CONTEXTO DO FILHO ---
@@ -116,9 +108,9 @@ int main(void) {
        for (int i = 0; i < ITERATIONS; i++) {
            (*counter)++;
        }
-       
+     
        // Aguarda o processo filho terminar a execução
-       wait(NULL);
+       wait(NULL); // Sincronização com o processo filho
        printf("[Pai] O filho encerrou.\n");
    }
 
@@ -143,5 +135,18 @@ int main(void) {
 
 
 ## Compilação e Execução
-gcc -Wall -Wextra shared_counter.c -o shared_counter
-./shared_counter
+gcc -Wall -Wextra shared_counter.c -o shared_counter <br>
+./shared_counter <br>
+
+
+```output
+Valor inicial do contador na RAM compartilhada: 0
+[Filho] Terminou seus incrementos.
+[Pai] O filho encerrou. 
+Valor final do contador: 63968 (Esparado: 100000)
+```
+
+O resultado obtido foi de 63968, esse número varia de acordo com o processador.<br>
+Básicamente, o processo de incremento necessita copiar ler, copiar e escrever o valor.<br>
+Se durante o processo de leitura, dois processos ler a mesma cópia, quando escreverem no <br>
+mesmo local, eles vão sobrescrever o mesmo dado.<br>
