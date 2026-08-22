@@ -1,0 +1,61 @@
+Parte I: IPC (Inter-Process Communication) e Sincronização
+
+    1_shared_counter.c — Memória Compartilhada Básica (mmap anônimo via fork).
+
+    2_producer_consumer_sem.c — Memória Compartilhada POSIX com Semáforos Nomeados para sincronização de buffer circular.
+
+    3_telemetry_pubsub.c — Filas de Mensagens POSIX (mq_*) para comunicação assíncrona orientada a registros.
+
+    4_sandbox_pipeline.c — Pipes anônimos e redirecionamento de fluxos de E/S.
+
+    5_supervisor_watchdog.c — Gerenciamento de Sinais (SIGCHLD, SIGKILL) e resiliência de processos.
+
+    6_unix_domain_socket.c — Sockets UNIX (AF_UNIX) e passamento de descritores de arquivo (FD passing).
+
+    7_ring_buffer_lockless.c — Ring Buffer SPSC lock-free baseado em operações atômicas de hardware.
+
+    8_memory_protection_sandbox.c — Controle cirúrgico de páginas virtuais e tratamento de falhas com mprotect e SIGSEGV.
+
+Parte II: Orquestração, Virtualização e Isolamento de Processos (Sem IPC explícito)
+
+    1_spawn_and_replace.c — O ciclo básico de execução com fork e a família execv.
+
+    2_orphan_zombie_handler.c — Coleta de status e prevenção de processos zumbis com waitpid.
+
+    3_env_and_args_injection.c — Construção manual de vetores de argumentos (argv) e ambiente (environ).
+
+    4_stdio_redirection.c — Isolamento de E/S com a chamada dup2.
+
+    5_daemon_setsid.c — Criação de daemons de sistema em segundo plano usando setsid.
+
+    6_privilege_dropping.c — Queda ativa de privilégios com setuid / setgid por segurança.
+
+    7_resource_limiter.c — Governança de recursos de hardware com setrlimit.
+
+    8_process_supervisor.c — Auto-cura e monitoramento de processos filhos via sinais.
+
+    9_chroot_jail.c — Isolamento do sistema de arquivos com chroot / pivot_root.
+
+    10_namespaces_isolation.c — Virtualização de Kernel leve (estilo Docker) via clone e Namespaces.
+
+    11_process_tracing_ptrace.c — Introspecção, debugging e interceptação de syscalls com ptrace.
+
+    12_cgroups_resource_controller.c — Limitação rígida de CPU e RAM utilizando Control Groups (Cgroups v2).
+
+Parte III: O Abismo do Sistema (Baixo Nível, Kernel, Ring 0 e Hardware)
+
+    13_raw_sys_call_assembly.c — Syscalls manuais via Assembly inline, quebrando a dependência dos wrappers da libc.
+
+    14_custom_elf_loader.c — Parser e Loader manual de binários ELF com alocação e execução de código em tempo de execução.
+
+    15_kernel_module_driver.c — Módulos de Kernel (LKM) rodando no Ring 0, com acesso direto a hardware, MMIO, interrupções (IRQ) e estruturas internas do sistema operacional.
+
+    16_bare_metal_scheduler.c — Sistemas multitarefa bare-metal sem sistema operacional, gerenciando MMU e interrupções direto no silício.
+
+    17_custom_bootloader_mbr.c — O código de boot de 512 bytes no MBR que inicializa a máquina antes de qualquer sistema operacional.
+
+    18_interrupt_descriptor_table.c — População manual da IDT para controle de exceções e interrupções de hardware na unha.
+
+    19_mmu_page_table_builder.c — Programação direta da MMU através de árvores hierárquicas de paginação de hardware.
+
+    20_smram_smm_firmware.c — O Ring -2 (System Management Mode), o nível de privilégio mais profundo e invisível da CPU executado abaixo do próprio kernel.
