@@ -67,12 +67,13 @@ $m$=$c(1+i)^t$<br>
    - i = taxa de juros (em numeros decimais)<br>
    - t = periodo de investimento em mês <br>
 
-$2101152 = 1410420(1+i)^{72}$<br>
-$\approx 1,48973 = (1+i)^{72}$<br>
-$\approx \sqrt[72]{1,48973} = (1+i)$<br>
-$\approx \sqrt[72]{1,48973} - 1= i$<br>
-$\approx 1.0055514 - 1= i$<br>
-$\approx 0.0055514 = i$
+### Cálculo
+   $2101152 = 1410420(1+i)^{72}$<br>
+   $\approx 1,48973 = (1+i)^{72}$<br>
+   $\approx \sqrt[72]{1,48973} = (1+i)$<br>
+   $\approx \sqrt[72]{1,48973} - 1= i$<br>
+   $\approx 1.0055514 - 1= i$<br>
+   $\approx 0.0055514 = i$
 
   OBS: Isso significa que o valor é 0.0056<br>
   equivalente à 0.5551%  mensal à juros compostos<br>
