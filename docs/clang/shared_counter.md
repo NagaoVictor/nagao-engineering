@@ -60,136 +60,80 @@ Este primeiro nível expõe a crua realidade da concorrência de hardware: a mem
 Quer que eu escreva o código-fonte comentado em C puro para este nível, mostrando a implementação exata do mmap anônimo e o efeito da concorrência sem travas?
 
 ```c
-
 #include <stdio.h>
-
 #include <stdlib.h>
-
 #include <unistd.h>
-
 #include <sys/mman.h>
-
 #include <sys/wait.h>
-
-
 
 #define ITERATIONS 50000
 
-
-
 int main(void) {
+   // 1. Aloca memória compartilhada entre processos usando mmap
+   // PROT_READ | PROT_WRITE: A memória pode ser lida e escrita.
+   // MAP_SHARED | MAP_ANONYMOUS: Compartilhada entre processos (shared) 
+   // e não associada a nenhum arquivo em disco (anonymous).
+   int *counter = mmap(NULL, sizeof(int), 
+                       PROT_READ | PROT_WRITE, 
+                       MAP_SHARED | MAP_ANONYMOUS, -1, 0);
 
-&#x20;   // 1. Aloca memória compartilhada entre processos usando mmap
 
-&#x20;   // PROT\_READ | PROT\_WRITE: A memória pode ser lida e escrita.
+   if (counter == MAP_FAILED) {
+       perror("mmap falhou");
+       exit(EXIT_FAILURE);
+   }
 
-&#x20;   // MAP\_SHARED | MAP\_ANONYMOUS: Compartilhada entre processos (shared) 
 
-&#x20;   // e não associada a nenhum arquivo em disco (anonymous).
+   // Inicializa o contador compartilhado
 
-&#x20;   int \*counter = mmap(NULL, sizeof(int), 
+   *counter = 0;
 
-&#x20;                       PROT\_READ | PROT\_WRITE, 
+   printf("Valor inicial do contador na RAM compartilhada: %d\n", *counter);
 
-&#x20;                       MAP\_SHARED | MAP\_ANONYMOUS, -1, 0);
+   // 2. Criação do processo filho
 
+   pid_t pid = fork();
 
 
-&#x20;   if (counter == MAP\_FAILED) {
+   if (pid < 0) {
+       perror("fork falhou");
+       munmap(counter, sizeof(int));
+       exit(EXIT_FAILURE);
+   }
 
-&#x20;       perror("mmap falhou");
 
-&#x20;       exit(EXIT\_FAILURE);
+   if (pid == 0) {
+       // --- CONTEXTO DO FILHO ---
+       // O filho incrementa o contador ITERATIONS vezes
+       for (int i = 0; i < ITERATIONS; i++) {
+           (*counter)++;
+       }
+       printf("[Filho] Terminou seus incrementos.\n");
+       _exit(EXIT_SUCCESS);
+   } else {
+       // --- CONTEXTO DO PAI ---
+       // O pai também incrementa o contador ITERATIONS vezes concorrentemente
+       for (int i = 0; i < ITERATIONS; i++) {
+           (*counter)++;
+       }
+       
+       // Aguarda o processo filho terminar a execução
+       wait(NULL);
+       printf("[Pai] O filho encerrou.\n");
+   }
 
-&#x20;   }
 
+   // 3. Resultado final
+   // Esperado idealmente: ITERATIONS * 2 (100.000)
+   // O que acontece na prática: Um valor menor devido à condição de corrida (race condition)
+   printf("Valor final do contador: %d (Esperado: %d)\n", *counter, ITERATIONS * 2);
 
 
-&#x20;   // Inicializa o contador compartilhado
+   // 4. Limpeza da memória mapeada
+   munmap(counter, sizeof(int));
 
-&#x20;   \*counter = 0;
 
-
-
-&#x20;   printf("Valor inicial do contador na RAM compartilhada: %d\\n", \*counter);
-
-
-
-&#x20;   // 2. Criação do processo filho
-
-&#x20;   pid\_t pid = fork();
-
-
-
-&#x20;   if (pid < 0) {
-
-&#x20;       perror("fork falhou");
-
-&#x20;       munmap(counter, sizeof(int));
-
-&#x20;       exit(EXIT\_FAILURE);
-
-&#x20;   }
-
-
-
-&#x20;   if (pid == 0) {
-
-&#x20;       // --- CONTEXTO DO FILHO ---
-
-&#x20;       // O filho incrementa o contador ITERATIONS vezes
-
-&#x20;       for (int i = 0; i < ITERATIONS; i++) {
-
-&#x20;           (\*counter)++;
-
-&#x20;       }
-
-&#x20;       printf("\[Filho] Terminou seus incrementos.\\n");
-
-&#x20;       \_exit(EXIT\_SUCCESS);
-
-&#x20;   } else {
-
-&#x20;       // --- CONTEXTO DO PAI ---
-
-&#x20;       // O pai também incrementa o contador ITERATIONS vezes concorrentemente
-
-&#x20;       for (int i = 0; i < ITERATIONS; i++) {
-
-&#x20;           (\*counter)++;
-
-&#x20;       }
-
-&#x20;       
-
-&#x20;       // Aguarda o processo filho terminar a execução
-
-&#x20;       wait(NULL);
-
-&#x20;       printf("\[Pai] O filho encerrou.\\n");
-
-&#x20;   }
-
-
-
-&#x20;   // 3. Resultado final
-
-&#x20;   // Esperado idealmente: ITERATIONS \* 2 (100.000)
-
-&#x20;   // O que acontece na prática: Um valor menor devido à condição de corrida (race condition)
-
-&#x20;   printf("Valor final do contador: %d (Esperado: %d)\\n", \*counter, ITERATIONS \* 2);
-
-
-
-&#x20;   // 4. Limpeza da memória mapeada
-
-&#x20;   munmap(counter, sizeof(int));
-
-
-
-&#x20;   return 0;
+   return 0;
 
 }
 
@@ -198,10 +142,6 @@ int main(void) {
 ```
 
 
-
-\## Compilação e Execução
-
-gcc -Wall -Wextra 1\_shared\_counter.c -o shared\_counter
-
-./shared\_counter
-
+## Compilação e Execução
+gcc -Wall -Wextra shared_counter.c -o shared_counter
+./shared_counter
