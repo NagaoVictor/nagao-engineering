@@ -26,7 +26,7 @@ $p$ = $19169.38$
   O objetivo deste cálculo é entender quais são os motivos de um aumento excessivo do valor de uma parcela.
   Ele calculará o valor em porcentagem do valor combinado em relação ao valor real pago.<br>
   $v$ = $c.x$ $\to$<br>
-  $x$ = $\frac{v}{c}$<br>
+  $x$ = $\frac{v}{c}$
   - v = Valor total pago após o periodo<br>
   - c = Valor combinado<br>
   - x = A porcentagem de aumento do valor do carro<br>
