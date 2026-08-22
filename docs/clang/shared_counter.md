@@ -147,6 +147,6 @@ Valor final do contador: 63968 (Esparado: 100000)
 ```
 
 O resultado obtido foi de 63968, esse número varia de acordo com o processador.<br>
-Básicamente, o processo de incremento necessita copiar ler, copiar e escrever o valor.<br>
+Básicamente, o processo de incremento necessita ler, copiar e escrever o valor.<br>
 Se durante o processo de leitura, dois processos ler a mesma cópia, quando escreverem no <br>
 mesmo local, eles vão sobrescrever o mesmo dado.<br>
