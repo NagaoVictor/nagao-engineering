@@ -67,8 +67,7 @@ $m$=$c(1+i)^t$<br>
    - i = taxa de juros (em numeros decimais)<br>
    - t = periodo de investimento em mês <br>
 
-$2101152 = 1410420 (1+i)^{72}$<br>
-$2101152 = 1410420 (1+i)^{72}$<br>
+$2101152 = 1410420(1+i)^{72}$<br>
 $\approx 1,48973 = (1+i)^{72}$<br>
 $\approx \sqrt[72]{1,48973} = (1+i)$<br>
 $\approx \sqrt[72]{1,48973} - 1= i$<br>
