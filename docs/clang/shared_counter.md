@@ -1,34 +1,31 @@
-\# Shared\_Counter
+# Shared_Counter
 
 
 
-O arquivo shared\_counter.c é a porta de entrada para o mundo da comunicação entre processos. Antes de lidarmos com arquivos de sistema, filas complexas ou semáforos, precisamos entender o conceito mais elementar do IPC: como fazer dois processos independentes enxergarem exatamente o mesmo bloco de RAM.
+O arquivo shared_counter.c é a porta de entrada para o mundo da comunicação entre processos. Antes de lidarmos com arquivos de sistema, filas complexas ou semáforos, precisamos entender o conceito mais elementar do IPC: como fazer dois processos independentes enxergarem exatamente o mesmo bloco de RAM.
 
 O Problema Clássico do Isolamento de Processos
 
 
-
 Por padrão, o kernel do sistema operacional (através da MMU) isola estritamente o espaço de memória de cada processo.
 
-
-
-&#x20;   Se você cria uma variável int contador = 0; em um programa e faz um fork(), o kernel duplica o processo. O filho recebe uma cópia exata daquela memória.
-
-
-
-&#x20;   Se o processo filho altera contador = 5, o processo pai continua enxergando contador = 0. Eles não compartilham o mesmo dado; eles têm cópias independentes em endereços virtuais diferentes.
+Se você cria uma variável int contador = 0; em um programa e faz um fork(), o kernel duplica o processo. O filho recebe uma cópia exata daquela memória.
 
 
 
-A Solução: Memória Compartilhada Anônima (mmap + MAP\_SHARED)
+Se o processo filho altera contador = 5, o processo pai continua enxergando contador = 0. Eles não compartilham o mesmo dado; eles têm cópias independentes em endereços virtuais diferentes.
 
 
 
-Para que o pai e o filho escrevam na mesma célula física de memória, usamos o mapeamento de memória virtual com a flag MAP\_SHARED.
+A Solução: Memória Compartilhada Anônima (mmap + MAP_SHARED)
 
 
 
-&#x20;   O truque da flag anônima (MAP\_ANONYMOUS): Normalmente, o mmap exige que você abra um arquivo no disco para mapeá-lo. Porém, combinando MAP\_ANONYMOUS com MAP\_SHARED, dizemos ao kernel: "Crie um bloco de memória puramente na RAM, compartilhe-o entre os processos que vierem a nascer daqui para frente, e não precisa associar a nenhum arquivo em disco."
+Para que o pai e o filho escrevam na mesma célula física de memória, usamos o mapeamento de memória virtual com a flag MAP_SHARED.
+
+
+
+O truque da flag anônima (MAP_ANONYMOUS): Normalmente, o mmap exige que você abra um arquivo no disco para mapeá-lo. Porém, combinando MAP_ANONYMOUS com MAP_SHARED, dizemos ao kernel: "Crie um bloco de memória puramente na RAM, compartilhe-o entre os processos que vierem a nascer daqui para frente, e não precisa associar a nenhum arquivo em disco."
 
 
 
@@ -36,23 +33,23 @@ Anatomia da Implementação Mental
 
 
 
-Quando construímos o 1\_shared\_counter.c, o fluxo de execução segue estes passos rígidos:
+Quando construímos o shared_counter.c, o fluxo de execução segue estes passos rígidos:
 
 
 
-&#x20;   Alocação Compartilhada: O processo pai chama mmap solicitando ao kernel um espaço do tamanho de um inteiro (sizeof(int)), configurado com permissões de leitura e escrita (PROT\_READ | PROT\_WRITE) e visibilidade compartilhada (MAP\_SHARED | MAP\_ANONYMOUS).
+Alocação Compartilhada: O processo pai chama mmap solicitando ao kernel um espaço do tamanho de um inteiro (sizeof(int)), configurado com permissões de leitura e escrita (PROT_READ | PROT_WRITE) e visibilidade compartilhada (MAP_SHARED | MAP_ANONYMOUS).
 
 
 
-&#x20;   O Fork: O pai inicializa o contador compartilhado com o valor 0 e, em seguida, dispara o fork().
+O Fork: O pai inicializa o contador compartilhado com o valor 0 e, em seguida, dispara o fork().
 
 
 
-&#x20;   Concorrência Natural: O kernel cria o processo filho. Agora, tanto o pai quanto o filho possuem um ponteiro que aponta exatamente para o mesmo endereço físico de memória alocado no passo 1.
+Concorrência Natural: O kernel cria o processo filho. Agora, tanto o pai quanto o filho possuem um ponteiro que aponta exatamente para o mesmo endereço físico de memória alocado no passo 1.
 
 
 
-&#x20;   Modificação e Conflito: Ambos entram em um loop onde leem o valor atual, incrementam e salvam de volta. É aqui que você percebe a primeira grande lição de sistemas: sem sincronização, os processos atropelam um ao outro (condições de corrida), fazendo com que o incremento final do contador venha errado ou inconsistente.
+Modificação e Conflito: Ambos entram em um loop onde leem o valor atual, incrementam e salvam de volta. É aqui que você percebe a primeira grande lição de sistemas: sem sincronização, os processos atropelam um ao outro (condições de corrida), fazendo com que o incremento final do contador venha errado ou inconsistente.
 
 
 
@@ -64,19 +61,19 @@ Quer que eu escreva o código-fonte comentado em C puro para este nível, mostra
 
 ```c
 
-\#include <stdio.h>
+#include <stdio.h>
 
-\#include <stdlib.h>
+#include <stdlib.h>
 
-\#include <unistd.h>
+#include <unistd.h>
 
-\#include <sys/mman.h>
+#include <sys/mman.h>
 
-\#include <sys/wait.h>
+#include <sys/wait.h>
 
 
 
-\#define ITERATIONS 50000
+#define ITERATIONS 50000
 
 
 
