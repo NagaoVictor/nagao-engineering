@@ -1,3 +1,22 @@
+No nível anterior (1_shared_counter.c), descobrimos que dois processos alterando a mesma memória ao mesmo tempo geram uma condição de <br>
+corrida (race condition), corrompendo o resultado final. Para resolver isso, entramos no mundo da sincronização de processos usando <br>
+Semáforos POSIX.<br>
+
+O Conceito: O Que é um Semáforo?
+Inventado por Edsger Dijkstra, um semáforo é essencialmente uma variável de controle protegida pelo kernel que funciona como um "porteiro" <br>
+ou um semáforo de trânsito para recursos compartilhados:<br>
+    sem_wait() (Decrementa / Pára): Se o valor do semáforo for maior que 0, ele o decrementa e deixa o processo passar. Se o valor for 0,<br>
+o processo é bloqueado (posto para dormir pelo kernel) até que outro processo libere o sinal.<br>
+    sem_post() (Incrementa / Libera): Incrementa o valor do semáforo e acorda um processo que estivesse dormindo esperando por ele. <br>
+No modelo Produtor-Consumidor, usamos dois ou mais semáforos para garantir duas regras de ouro:<br>
+    Exclusão Mútua (Mutex): Garantir que apenas um processo mexa na memória compartilhada por vez.<br>
+    Sinalização de Disponibilidade: Garantir que o Consumidor não tente ler um dado que ainda não foi produzido,<br>
+e que o Produtor não sobrescreva um dado que ainda não foi consumido (buffer circular).<br>
+O Código em C: Implementando com Semáforos Anônimos Compartilhados<br>
+Assim como fizemos com o mmap, podemos colocar um semáforo POSIX diretamente dentro da memória compartilhada usando a função sem_init() com a <br>
+flag pshared = 1 (indicando que ele é compartilhado entre múltiplos processos, e não apenas entre threads).
+
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -89,3 +108,16 @@ int main(void) {
 
     return 0;
 }
+
+```
+
+# Compilação e Execução
+Lembre-se da flag obrigatória -pthread para suportar primitivas de sincronização POSIX:
+
+gcc -Wall -Wextra -pthread 2_producer_consumer_sem.c -o producer_consumer
+./producer_consumer
+
+```output
+
+
+```
