@@ -142,5 +142,16 @@ gcc -Wall -Wextra -pthread telemetry_pubsub.c -lrt -o telemetry_pubsub <br>
 
 
 ```output
-
+[Sistema] Fila de mensagens /telemetry_queue criada com sucesso.
+[Produtor] Enviado pacote 1 para a fila.
+[Consumidor] Recebido -> ID: 101 | Temp: 26.50°C | Prioridade: 1
+[Produtor] Enviado pacote 2 para a fila.
+[Consumidor] Recebido -> ID: 101 | Temp: 28.00°C | Prioridade: 2
+[Produtor] Enviado pacote 3 para a fila.
+[Consumidor] Recebido -> ID: 101 | Temp: 29.50°C | Prioridade: 3
+[Produtor] Enviado pacote 4 para a fila.
+[Consumidor] Recebido -> ID: 101 | Temp: 31.00°C | Prioridade: 4
+[Produtor] Enviado pacote 5 para a fila.
+[Consumidor] Recebido -> ID: 101 | Temp: 32.50°C | Prioridade: 5
+[Sistema] Fila destruída e recursos limpos.
 ```
