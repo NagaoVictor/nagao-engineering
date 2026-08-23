@@ -114,10 +114,11 @@ int main(void) {
 # Compilação e Execução
 Lembre-se da flag obrigatória -pthread para suportar primitivas de sincronização POSIX:
 
-gcc -Wall -Wextra -pthread 2_producer_consumer_sem.c -o producer_consumer
-./producer_consumer
+gcc -Wall -Wextra -pthread 2_producer_consumer_sem.c -o producer_consumer <br>
+./producer_consumer <br>
 
 ```output
-
+Memória compartilhada e semáforo inicializador.
+Valor final do contador com semáforo: 100000 (Esperando: 1000000)
 
 ```
