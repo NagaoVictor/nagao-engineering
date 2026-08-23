@@ -134,7 +134,7 @@ int main(void) {
 Como compilar e executar: <br>
 Lembre-se das flags de tempo real (-lrt) e threads se necessário no seu ambiente Linux: <br>
 
-gcc -Wall -Wextra -pthread 3_telemetry_pubsub.c -lrt -o telemetry_pubsub <br>
+gcc -Wall -Wextra -pthread telemetry_pubsub.c -lrt -o telemetry_pubsub <br>
 ./telemetry_pubsub <br>
 
 

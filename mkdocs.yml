@@ -74,6 +74,7 @@ nav:
       - C Arrays: clang/arrays.md
       - C Shared Counter: clang/shared_counter.md
       - C Producer Consumer Semaphore: clang/producer_consumer_sem.md
+      - C Telemetry PubSub: clang/telemetry_pubsub.md
 
   - Assembly:
       - Básico: assembly/basico.md 
