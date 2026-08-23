@@ -27,6 +27,7 @@ esses dados de forma assíncrona.<br>
 #include <sys/stat.h>
 #include <mqueue.h>
 #include <sys/wait.h>
+#include <time.h>
 
 #define QUEUE_NAME  "/telemetry_queue"
 #define MAX_MSG_SIZE sizeof(TelemetryPacket)
