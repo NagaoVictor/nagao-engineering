@@ -1,4 +1,6 @@
-No nível anterior (1_shared_counter.c), descobrimos que dois processos alterando a mesma memória ao mesmo tempo geram uma condição de <br>
+# Producer Consumer Semaphoro (producer_consumer_sem.c)
+
+No nível shared_counter.c, descobrimos que dois processos alterando a mesma memória ao mesmo tempo geram uma condição de <br>
 corrida (race condition), corrompendo o resultado final. Para resolver isso, entramos no mundo da sincronização de processos usando <br>
 Semáforos POSIX.<br>
 

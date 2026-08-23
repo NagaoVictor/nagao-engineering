@@ -1,5 +1,4 @@
-# Shared_Counter
-
+# Shared_Counter (shared_counter.c)
 
 
 O arquivo shared_counter.c é a porta de entrada para o mundo da comunicação entre processos. Antes de lidarmos com arquivos de sistema, filas complexas ou semáforos, precisamos entender o conceito mais elementar do IPC: como fazer dois processos independentes enxergarem exatamente o mesmo bloco de RAM.
