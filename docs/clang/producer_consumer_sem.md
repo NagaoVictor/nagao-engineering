@@ -1,3 +1,55 @@
+No arquivo shared\_counter.c, descobrimos que dois processos alterando a mesma memória ao mesmo tempo <br>
+
+geram uma condição de corrida (race condition), corrompendo o resultado final.
+
+
+
+Para resolver isso, entramos no mundo da sincronização de processos usando Semáforos POSIX. <br>
+
+
+
+\## O Conceito: O Que é um Semáforo?
+
+
+
+Inventado por Edsger Dijkstra, um semáforo é essencialmente uma variável de controle protegida pelo kernel que funciona como um "porteiro" ou um semáforo de trânsito para recursos compartilhados:
+
+
+
+&#x20;   sem\_wait() (Decrementa / Pára): Se o valor do semáforo for maior que 0, ele o decrementa e deixa o processo passar. Se o valor for 0, o processo é bloqueado (posto para dormir pelo kernel) até que outro processo libere o sinal.
+
+
+
+&#x20;   sem\_post() (Incrementa / Libera): Incrementa o valor do semáforo e acorda um processo que estivesse dormindo esperando por ele.
+
+
+
+No modelo Produtor-Consumidor, usamos dois ou mais semáforos para garantir duas regras de ouro:
+
+
+
+&#x20;   Exclusão Mútua (Mutex): Garantir que apenas um processo mexa na memória compartilhada por vez.
+
+
+
+&#x20;   Sinalização de Disponibilidade: Garantir que o Consumidor não tente ler um dado que ainda não foi produzido, e que o Produtor não sobrescreva um dado que ainda não foi consumido (buffer circular).
+
+
+
+O Código em C: Implementando com Semáforos Anônimos Compartilhados
+
+
+
+Assim como fizemos com o mmap, podemos colocar um semáforo POSIX diretamente dentro da memória compartilhada usando a função sem\_init() com a flag pshared = 1 (indicando que ele é compartilhado entre múltiplos processos, e não apenas entre threads).
+
+
+
+
+
+```c
+
+
+
 \#include stdio.h
 
 \#include stdlib.h
@@ -28,7 +80,7 @@ typedef struct {
 
 int main(void) {
 
-&#x20;    1. Aloca a estrutura inteira na memória compartilhada mmap
+&#x20;    //1. Aloca a estrutura inteira na memória compartilhada mmap
 
 &#x20;   SharedData shared = mmap(NULL, sizeof(SharedData),
 
@@ -48,7 +100,7 @@ int main(void) {
 
 
 
-&#x20;    2. Inicializa o contador
+&#x20;    //2. Inicializa o contador
 
 &#x20;   shared-counter = 0;
 
@@ -76,7 +128,7 @@ int main(void) {
 
 
 
-&#x20;    3. Criação do processo filho
+&#x20;    //3. Criação do processo filho
 
 &#x20;   pid\_t pid = fork();
 
@@ -160,7 +212,7 @@ int main(void) {
 
 
 
-&#x20;    4. Resultado final garantido
+&#x20;   // 4. Resultado final garantido
 
 &#x20;   printf(Valor final do contador com semáforo %d (Esperado %d)n,
 
@@ -168,7 +220,7 @@ int main(void) {
 
 
 
-&#x20;    5. Limpeza de recursos
+&#x20;   // 5. Limpeza de recursos
 
 &#x20;   sem\_destroy(\&(shared-mutex));
 
@@ -179,4 +231,30 @@ int main(void) {
 &#x20;   return 0;
 
 }
+
+
+
+```
+
+
+
+\## Compilação e Execução
+
+gcc -Wall -Wextra -pthread 2\_producer\_consumer\_sem.c -o producer\_consumer
+
+./producer\_consumer
+
+
+
+
+
+```output
+
+
+
+
+
+
+
+```
 
