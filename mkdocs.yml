@@ -63,6 +63,14 @@ nav:
       - Derivadas: mathematics/derivadas.md
       - Integrais: mathematics/integrais.md
       - Graficos: mathematics/graficos.md
+      
+  
+  - Linguas:
+      - Linguas Port: primos/port.md
+      - Linguas Ing: primos/ing.md
+      - Linguas Jap: primos/jap.md
+      - Linguas Ita: primos/ita.md
+      - Linguas Deu: primos/deu.md
   - Linux:
       - Linux: dispositivos/linux.md
       - Elétrica: physics/eletrica.md
